@@ -19,6 +19,33 @@ You can download the Polaris Installer in three ways:
    git clone https://github.com/BANADDA/polaris_distributions.git
    ```
 
+## Large Files Note
+
+This repository uses Git Large File Storage (Git LFS) to manage the installer files. If you want to clone the entire repository including the large installer files:
+
+1. **Install Git LFS**: If you haven't installed Git LFS, do so first:
+   ```
+   # For Windows (using Chocolatey)
+   choco install git-lfs
+   
+   # For Linux (Debian/Ubuntu)
+   sudo apt install git-lfs
+   
+   # For macOS (using Homebrew)
+   brew install git-lfs
+   ```
+
+2. **Clone with LFS**: Then clone the repository:
+   ```
+   git lfs install
+   git clone https://github.com/BANADDA/polaris_distributions.git
+   ```
+
+3. **Pull Large Files**: If you've already cloned, run:
+   ```
+   git lfs pull
+   ```
+
 ## Distribution Structure
 
 Each version folder contains:
