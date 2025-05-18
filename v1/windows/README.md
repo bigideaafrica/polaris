@@ -6,9 +6,16 @@ This folder contains the Windows distribution of Polaris Installer v1.0.0.
 
 1. **Easy Install**: Run [PolarisInstaller-Setup.exe](./PolarisInstaller-Setup.exe) for a guided installation
 2. **Portable Version**: Use the [portable](./portable/) directory for a no-install option
-3. **Command-Line Download**: Download directly using PowerShell:
+3. **Command-Line Download**: 
+   
+   Using PowerShell (run PowerShell as administrator):
    ```powershell
    Invoke-WebRequest -Uri "https://github.com/BANADDA/polaris_distributions/raw/main/v1/windows/PolarisInstaller-Setup.exe" -OutFile "PolarisInstaller-Setup.exe"
+   ```
+   
+   Using Command Prompt (cmd.exe):
+   ```cmd
+   curl -L -o PolarisInstaller-Setup.exe https://github.com/BANADDA/polaris_distributions/raw/main/v1/windows/PolarisInstaller-Setup.exe
    ```
 
 ## System Requirements

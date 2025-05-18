@@ -12,19 +12,25 @@ This is the first release of the Polaris Installer application, a tool designed 
 
 You can download Polaris Installer directly using command-line tools:
 
-**Windows (PowerShell):**
+**Windows PowerShell**: (Open PowerShell, not Command Prompt)
 ```powershell
 # Download Windows installer
 Invoke-WebRequest -Uri "https://github.com/BANADDA/polaris_distributions/raw/main/v1/windows/PolarisInstaller-Setup.exe" -OutFile "PolarisInstaller-Setup.exe"
 ```
 
-**Linux/MacOS (curl):**
+**Windows Command Prompt (cmd.exe)**:
+```cmd
+# Download Windows installer
+curl -L -o PolarisInstaller-Setup.exe https://github.com/BANADDA/polaris_distributions/raw/main/v1/windows/PolarisInstaller-Setup.exe
+```
+
+**Linux/MacOS (curl)**:
 ```bash
 # Download Windows installer (when available)
 curl -L "https://github.com/BANADDA/polaris_distributions/raw/main/v1/windows/PolarisInstaller-Setup.exe" -o "PolarisInstaller-Setup.exe"
 ```
 
-**Using wget:**
+**Using wget**:
 ```bash
 # Download Windows installer
 wget "https://github.com/BANADDA/polaris_distributions/raw/main/v1/windows/PolarisInstaller-Setup.exe"
