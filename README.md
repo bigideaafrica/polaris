@@ -27,36 +27,6 @@ You can download the Polaris Installer in three ways:
    git clone https://github.com/BANADDA/polaris_distributions.git
    ```
 
-## Quick Installation Guide
-
-### Windows
-```cmd
-# Download installer (Command Prompt)
-curl -L -o PolarisInstaller-Setup.exe https://github.com/BANADDA/polaris_distributions/raw/main/v1/windows/PolarisInstaller-Setup.exe
-
-# Run installer
-start PolarisInstaller-Setup.exe
-```
-
-### Linux (Debian/Ubuntu)
-```bash
-# Download DEB package
-curl -L "https://github.com/BANADDA/polaris_distributions/raw/main/v1/linux/polaris-installer_1.0.0_amd64.deb" -o "polaris-installer_1.0.0_amd64.deb"
-
-# Install package
-sudo dpkg -i polaris-installer_1.0.0_amd64.deb
-sudo apt-get install -f  # Install dependencies if needed
-```
-
-### Linux (Fedora/RHEL/CentOS)
-```bash
-# Download RPM package
-curl -L "https://github.com/BANADDA/polaris_distributions/raw/main/v1/linux/polaris-installer_1.0.0_x86_64.rpm" -o "polaris-installer_1.0.0_x86_64.rpm"
-
-# Install package
-sudo rpm -i polaris-installer_1.0.0_x86_64.rpm
-```
-
 ## Large Files Note
 
 This repository uses Git Large File Storage (Git LFS) to manage the installer files. If you want to clone the entire repository including the large installer files:
