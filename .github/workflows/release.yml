@@ -37,6 +37,7 @@ jobs:
             v${{ env.VERSION }}/**/*.deb
             v${{ env.VERSION }}/**/*.rpm
             v${{ env.VERSION }}/**/*.pkg
+            v${{ env.VERSION }}/**/*.tar.gz
           body: |
             # Polaris Installer ${{ env.TAG }}
             
@@ -44,7 +45,13 @@ jobs:
             
             ## Installation
             
-            - **Windows**: Download and run the PolarisInstaller-Setup.exe file.
+            ### Windows
+            - **Windows Installer**: Download and run the PolarisInstaller-Setup.exe file.
             - **Portable**: Download the portable.zip file and extract it to any location.
+            
+            ### Linux
+            - **Debian/Ubuntu**: Download the .deb package and run `sudo dpkg -i polaris-installer_*.deb`
+            - **Fedora/RHEL/CentOS**: Download the .rpm package and run `sudo rpm -i polaris-installer_*.rpm`
+            - **Other Distributions**: Download the .tar.gz file, extract it, and run the installer
             
             Please refer to the [documentation](./v${{ env.VERSION }}/README.md) for detailed instructions. 

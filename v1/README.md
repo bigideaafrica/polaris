@@ -5,7 +5,7 @@ This is the first release of the Polaris Installer application, a tool designed 
 ## Downloads
 
 - [Windows Installer](./windows/PolarisInstaller-Setup.exe)
-- Linux Installer (Coming Soon)
+- [Linux Installers](./linux/) (DEB, RPM, and tarball available)
 - MacOS Installer (Coming Soon)
 
 ### Command-Line Download
@@ -30,28 +30,48 @@ curl -L -o PolarisInstaller-Setup.exe https://github.com/BANADDA/polaris_distrib
 start PolarisInstaller-Setup.exe
 ```
 
-**Linux/MacOS (curl)**:
+**Linux (Debian/Ubuntu)**:
 ```bash
-# Download Windows installer (when available)
-curl -L "https://github.com/BANADDA/polaris_distributions/raw/main/v1/windows/PolarisInstaller-Setup.exe" -o "PolarisInstaller-Setup.exe"
+# Download DEB package
+curl -L "https://github.com/BANADDA/polaris_distributions/raw/main/v1/linux/polaris-installer_1.0.0_amd64.deb" -o "polaris-installer_1.0.0_amd64.deb"
 
-# Run the installer (on Windows with Wine if installed)
-wine PolarisInstaller-Setup.exe
+# Install the package
+sudo dpkg -i polaris-installer_1.0.0_amd64.deb
+sudo apt-get install -f  # Install dependencies if needed
 ```
 
-**Using wget**:
+**Linux (Fedora/RHEL/CentOS)**:
 ```bash
-# Download Windows installer
-wget "https://github.com/BANADDA/polaris_distributions/raw/main/v1/windows/PolarisInstaller-Setup.exe"
+# Download RPM package
+curl -L "https://github.com/BANADDA/polaris_distributions/raw/main/v1/linux/polaris-installer_1.0.0_x86_64.rpm" -o "polaris-installer_1.0.0_x86_64.rpm"
 
-# Run the installer (on Windows with Wine if installed)
-wine PolarisInstaller-Setup.exe
+# Install the package
+sudo rpm -i polaris-installer_1.0.0_x86_64.rpm
+```
+
+**Linux (Generic)**:
+```bash
+# Download tarball
+wget "https://github.com/BANADDA/polaris_distributions/raw/main/v1/linux/polaris-installer-linux-x86_64.tar.gz"
+
+# Extract and run
+tar -xzf polaris-installer-linux-x86_64.tar.gz
+cd polaris-installer
+chmod +x polaris-installer
+./polaris-installer
 ```
 
 ## Minimum Requirements
 
 ### Windows
 - Windows 10 or later
+- 4GB RAM
+- 100MB free disk space
+- Internet connection for registration and mining
+- Python 3.8+ (included in installer)
+
+### Linux
+- Modern Linux distribution (Ubuntu 20.04+, Fedora 35+, etc.)
 - 4GB RAM
 - 100MB free disk space
 - Internet connection for registration and mining
@@ -85,7 +105,7 @@ wine PolarisInstaller-Setup.exe
 
 ### v1.0.0 (2025-05-17)
 - Initial release
-- Windows support
+- Windows and Linux support
 - Basic mining node setup and monitoring
 - Registration with Bittensor network
 - System information detection and reporting 
