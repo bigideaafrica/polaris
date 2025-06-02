@@ -86,7 +86,24 @@ Choose the appropriate installer for your operating system:
 
 ### 1. Installation
 
+> **💡 Windows Users**: If you get an error like "'Invoke-WebRequest' is not recognized", you're using **Command Prompt** instead of **PowerShell**. Use Option A below for Command Prompt, or open PowerShell for Option B.
+
 #### Windows
+
+**Option A: Command Prompt (cmd.exe)**
+```cmd
+REM Download Windows build
+curl -L "https://github.com/bigideaafrica/polaris_distributions/raw/main/v2/windows/polaris-node-manager-windows.zip" -o "polaris-node-manager-windows.zip"
+
+REM Extract using built-in tar
+tar -xf polaris-node-manager-windows.zip
+
+REM Navigate and run
+cd polaris-node-manager
+polaris-node-manager.exe
+```
+
+**Option B: PowerShell**
 ```powershell
 # Download Windows build
 Invoke-WebRequest -Uri "https://github.com/bigideaafrica/polaris_distributions/raw/main/v2/windows/polaris-node-manager-windows.zip" -OutFile "polaris-node-manager-windows.zip"

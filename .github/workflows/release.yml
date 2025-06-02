@@ -44,6 +44,13 @@ jobs:
             ## 🚀 Quick Installation
             
             ### Windows (~174 MB)
+            **Command Prompt (cmd.exe)**:
+            ```
+            curl -L "URL_TO_ZIP" -o polaris.zip
+            tar -xf polaris.zip
+            cd polaris-node-manager && polaris-node-manager.exe
+            ```
+            **PowerShell**: Use `Invoke-WebRequest` and `Expand-Archive`
             - **ZIP Build (Recommended)**: Download `polaris-node-manager-windows.zip`, extract and run
             - **Traditional Installer**: Download and run `Polaris Node Manager Setup *.exe`
             

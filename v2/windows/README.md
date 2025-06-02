@@ -36,9 +36,33 @@ Welcome to the Windows distribution of **Polaris Node Manager v2**! This package
 
 ## 🚀 Installation Instructions
 
+> **💡 Which Command Interface Should I Use?**
+> 
+> - **Command Prompt (cmd.exe)**: The black window that opens by default when you search "cmd" or "Command Prompt"
+> - **PowerShell**: The blue window when you search "PowerShell" in Start Menu
+> - **How to Open**:
+>   - **Command Prompt**: Press `Windows + R`, type `cmd`, press Enter
+>   - **PowerShell**: Press `Windows + R`, type `powershell`, press Enter
+>   - **Or**: Search "Command Prompt" or "PowerShell" in Start Menu
+
 ### Method 1: ZIP Build (Recommended)
 
-#### Download and Extract
+#### Option A: Command Prompt (cmd.exe)
+```cmd
+REM Download Windows build
+curl -L "https://github.com/bigideaafrica/polaris_distributions/raw/main/v2/windows/polaris-node-manager-windows.zip" -o "polaris-node-manager-windows.zip"
+
+REM Extract using built-in tar (Windows 10+)
+tar -xf polaris-node-manager-windows.zip
+
+REM Navigate to extracted folder
+cd polaris-node-manager
+
+REM Run the application
+polaris-node-manager.exe
+```
+
+#### Option B: PowerShell
 ```powershell
 # Download Windows build
 Invoke-WebRequest -Uri "https://github.com/bigideaafrica/polaris_distributions/raw/main/v2/windows/polaris-node-manager-windows.zip" -OutFile "polaris-node-manager-windows.zip"
@@ -53,16 +77,25 @@ cd polaris-node-manager
 .\polaris-node-manager.exe
 ```
 
-#### Alternative Extraction Method
-1. **Download** `polaris-node-manager-windows.zip` from the repository
-2. **Right-click** the ZIP file and select "Extract All..."
-3. **Choose** extraction location
-4. **Navigate** to the extracted folder
-5. **Double-click** `polaris-node-manager.exe` to run
+#### Option C: Manual Download (Easiest)
+1. **Go to**: `https://github.com/bigideaafrica/polaris_distributions/tree/main/v2/windows`
+2. **Click** on `polaris-node-manager-windows.zip`
+3. **Click** "Download" button
+4. **Right-click** the downloaded ZIP → "Extract All..."
+5. **Navigate** to extracted folder and **double-click** `polaris-node-manager.exe`
 
 ### Method 2: Traditional Installer
 
-#### Download and Install
+#### Option A: Command Prompt (cmd.exe)
+```cmd
+REM Download installer
+curl -L "https://github.com/bigideaafrica/polaris_distributions/raw/main/v2/windows/Polaris Node Manager Setup 0.17.1.exe" -o "setup.exe"
+
+REM Run installer (requires admin privileges)
+setup.exe
+```
+
+#### Option B: PowerShell
 ```powershell
 # Download installer
 Invoke-WebRequest -Uri "https://github.com/bigideaafrica/polaris_distributions/raw/main/v2/windows/Polaris%20Node%20Manager%20Setup%200.17.1.exe" -OutFile "Polaris Node Manager Setup 0.17.1.exe"
@@ -185,6 +218,13 @@ Copy-Item "$env:APPDATA\PolarisNodeManager" -Destination "C:\Backup\PolarisNodeM
 ## 🚨 Troubleshooting
 
 ### Common Issues
+
+#### "'Invoke-WebRequest' is not recognized" Error
+This means you're using **Command Prompt** instead of **PowerShell**:
+- **Solution 1**: Use the Command Prompt commands (Option A) instead
+- **Solution 2**: Open PowerShell instead:
+  - Press `Windows + R`, type `powershell`, press Enter
+  - Or search "PowerShell" in Start Menu
 
 #### Application Won't Start
 ```powershell
