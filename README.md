@@ -35,7 +35,7 @@ This repository contains distribution packages for the Polaris Node Manager appl
 
 ### Quick Download (Recommended)
 
-**Latest v2.0.0**: Visit the [Releases](https://github.com/BANADDA/polaris_distributions/releases) page and download the latest version for your platform.
+**Latest v2.0.0**: Visit the [Releases](https://github.com/bigideaafrica/polaris_distributions/releases) page and download the latest version for your platform.
 
 ### Version-Specific Download
 
@@ -51,7 +51,7 @@ Navigate to the specific version folder:
 
 Clone this repository for offline access:
 ```bash
-git clone https://github.com/BANADDA/polaris_distributions.git
+git clone https://github.com/bigideaafrica/polaris_distributions.git
 ```
 
 ## Large Files Note
@@ -73,7 +73,7 @@ This repository uses Git Large File Storage (Git LFS) to manage the installer fi
 2. **Clone with LFS**: Then clone the repository:
    ```
    git lfs install
-   git clone https://github.com/BANADDA/polaris_distributions.git
+   git clone https://github.com/bigideaafrica/polaris_distributions.git
    ```
 
 3. **Pull Large Files**: If you've already cloned, run:

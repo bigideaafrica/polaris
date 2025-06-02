@@ -12,7 +12,7 @@ This folder contains the Linux distribution of Polaris Installer v1.0.0.
    **Debian/Ubuntu**:
    ```bash
    # Download the DEB package
-   curl -L "https://github.com/BANADDA/polaris_distributions/raw/main/v1/linux/polaris-installer_1.0.0_amd64.deb" -o "polaris-installer_1.0.0_amd64.deb"
+   curl -L "https://github.com/bigideaafrica/polaris_distributions/raw/main/v1/linux/polaris-installer_1.0.0_amd64.deb" -o "polaris-installer_1.0.0_amd64.deb"
    
    # Install the package
    sudo dpkg -i polaris-installer_1.0.0_amd64.deb
@@ -25,7 +25,7 @@ This folder contains the Linux distribution of Polaris Installer v1.0.0.
    **Fedora/RHEL/CentOS**:
    ```bash
    # Download the RPM package
-   curl -L "https://github.com/BANADDA/polaris_distributions/raw/main/v1/linux/polaris-installer_1.0.0_x86_64.rpm" -o "polaris-installer_1.0.0_x86_64.rpm"
+   curl -L "https://github.com/bigideaafrica/polaris_distributions/raw/main/v1/linux/polaris-installer_1.0.0_x86_64.rpm" -o "polaris-installer_1.0.0_x86_64.rpm"
    
    # Install the package
    sudo rpm -i polaris-installer_1.0.0_x86_64.rpm
@@ -37,7 +37,7 @@ This folder contains the Linux distribution of Polaris Installer v1.0.0.
    **Other Linux Distributions**:
    ```bash
    # Download the tarball
-   wget "https://github.com/BANADDA/polaris_distributions/raw/main/v1/linux/polaris-installer-linux-x86_64.tar.gz"
+   wget "https://github.com/bigideaafrica/polaris_distributions/raw/main/v1/linux/polaris-installer-linux-x86_64.tar.gz"
    
    # Extract the archive
    tar -xzf polaris-installer-linux-x86_64.tar.gz

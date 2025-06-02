@@ -56,7 +56,7 @@ sudo pacman -S gtk3 libnotify nss libxss libxtst xdg-utils
 #### Option A: Download and Install
 ```bash
 # Download DEB package
-wget "https://github.com/BANADDA/polaris_distributions/raw/main/v2/linux/polaris-node-manager_2.0.0_amd64.deb"
+wget "https://github.com/bigideaafrica/polaris_distributions/raw/main/v2/linux/polaris-node-manager_2.0.0_amd64.deb"
 
 # Install with dpkg
 sudo dpkg -i polaris-node-manager_2.0.0_amd64.deb
@@ -68,7 +68,7 @@ sudo apt-get install -f
 #### Option B: One-Line Installation
 ```bash
 # Download and install in one command
-curl -L "https://github.com/BANADDA/polaris_distributions/raw/main/v2/linux/polaris-node-manager_2.0.0_amd64.deb" -o /tmp/polaris.deb && sudo dpkg -i /tmp/polaris.deb && sudo apt-get install -f
+curl -L "https://github.com/bigideaafrica/polaris_distributions/raw/main/v2/linux/polaris-node-manager_2.0.0_amd64.deb" -o /tmp/polaris.deb && sudo dpkg -i /tmp/polaris.deb && sudo apt-get install -f
 ```
 
 ### Method 2: RPM Package (Fedora/RHEL/CentOS)
@@ -76,7 +76,7 @@ curl -L "https://github.com/BANADDA/polaris_distributions/raw/main/v2/linux/pola
 #### Fedora
 ```bash
 # Download RPM package
-wget "https://github.com/BANADDA/polaris_distributions/raw/main/v2/linux/polaris-node-manager_2.0.0_x86_64.rpm"
+wget "https://github.com/bigideaafrica/polaris_distributions/raw/main/v2/linux/polaris-node-manager_2.0.0_x86_64.rpm"
 
 # Install with dnf
 sudo dnf install ./polaris-node-manager_2.0.0_x86_64.rpm
@@ -85,7 +85,7 @@ sudo dnf install ./polaris-node-manager_2.0.0_x86_64.rpm
 #### RHEL/CentOS
 ```bash
 # Download RPM package
-curl -L "https://github.com/BANADDA/polaris_distributions/raw/main/v2/linux/polaris-node-manager_2.0.0_x86_64.rpm" -o polaris-node-manager.rpm
+curl -L "https://github.com/bigideaafrica/polaris_distributions/raw/main/v2/linux/polaris-node-manager_2.0.0_x86_64.rpm" -o polaris-node-manager.rpm
 
 # Install with yum/dnf
 sudo yum install ./polaris-node-manager.rpm
@@ -98,7 +98,7 @@ sudo dnf install ./polaris-node-manager.rpm
 #### Download and Run
 ```bash
 # Download AppImage
-wget "https://github.com/BANADDA/polaris_distributions/raw/main/v2/linux/PolarisNodeManager-2.0.0.AppImage"
+wget "https://github.com/bigideaafrica/polaris_distributions/raw/main/v2/linux/PolarisNodeManager-2.0.0.AppImage"
 
 # Make executable
 chmod +x PolarisNodeManager-2.0.0.AppImage
@@ -129,7 +129,7 @@ update-desktop-database ~/.local/share/applications/
 #### Extract and Run
 ```bash
 # Download tarball
-wget "https://github.com/BANADDA/polaris_distributions/raw/main/v2/linux/polaris-node-manager-linux-x86_64.tar.gz"
+wget "https://github.com/bigideaafrica/polaris_distributions/raw/main/v2/linux/polaris-node-manager-linux-x86_64.tar.gz"
 
 # Extract
 tar -xzf polaris-node-manager-linux-x86_64.tar.gz
@@ -459,7 +459,7 @@ rm -f ~/.local/share/applications/polaris-node-manager.desktop
 - 📧 **Email**: support@polarisnode.com
 - 💬 **Discord**: [Join our community](https://discord.gg/polaris)
 - 📖 **Documentation**: [Full docs](https://docs.polarisnode.com)
-- 🐛 **Issues**: [GitHub Issues](https://github.com/BANADDA/polaris_distributions/issues)
+- 🐛 **Issues**: [GitHub Issues](https://github.com/bigideaafrica/polaris_distributions/issues)
 
 ## 📋 Command Line Usage
 

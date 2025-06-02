@@ -84,14 +84,14 @@ Choose the appropriate installer for your operating system:
 #### Windows
 ```powershell
 # Download and run installer
-Invoke-WebRequest -Uri "https://github.com/BANADDA/polaris_distributions/raw/main/v2/windows/PolarisNodeManager-Setup.exe" -OutFile "PolarisNodeManager-Setup.exe"
+Invoke-WebRequest -Uri "https://github.com/bigideaafrica/polaris_distributions/raw/main/v2/windows/PolarisNodeManager-Setup.exe" -OutFile "PolarisNodeManager-Setup.exe"
 Start-Process -FilePath ".\PolarisNodeManager-Setup.exe"
 ```
 
 #### Linux (Ubuntu/Debian)
 ```bash
 # Download and install DEB package
-wget "https://github.com/BANADDA/polaris_distributions/raw/main/v2/linux/polaris-node-manager_2.0.0_amd64.deb"
+wget "https://github.com/bigideaafrica/polaris_distributions/raw/main/v2/linux/polaris-node-manager_2.0.0_amd64.deb"
 sudo dpkg -i polaris-node-manager_2.0.0_amd64.deb
 sudo apt-get install -f  # Install dependencies
 ```
@@ -99,14 +99,14 @@ sudo apt-get install -f  # Install dependencies
 #### Linux (Fedora/RHEL/CentOS)
 ```bash
 # Download and install RPM package
-wget "https://github.com/BANADDA/polaris_distributions/raw/main/v2/linux/polaris-node-manager_2.0.0_x86_64.rpm"
+wget "https://github.com/bigideaafrica/polaris_distributions/raw/main/v2/linux/polaris-node-manager_2.0.0_x86_64.rpm"
 sudo rpm -i polaris-node-manager_2.0.0_x86_64.rpm
 ```
 
 #### MacOS
 ```bash
 # Download DMG file
-curl -L "https://github.com/BANADDA/polaris_distributions/raw/main/v2/macos/PolarisNodeManager-2.0.0.dmg" -o "PolarisNodeManager-2.0.0.dmg"
+curl -L "https://github.com/bigideaafrica/polaris_distributions/raw/main/v2/macos/PolarisNodeManager-2.0.0.dmg" -o "PolarisNodeManager-2.0.0.dmg"
 # Open DMG and drag to Applications folder
 ```
 
@@ -269,7 +269,7 @@ For technical support and bug reports:
 - 📧 Email: support@polarisnode.com
 - 💬 Discord: [Join our community](https://discord.gg/polaris)
 - 📖 Documentation: [Full docs](https://docs.polarisnode.com)
-- 🐛 Issues: [GitHub Issues](https://github.com/BANADDA/polaris_distributions/issues)
+- 🐛 Issues: [GitHub Issues](https://github.com/bigideaafrica/polaris_distributions/issues)
 
 ## 📈 Performance Optimization
 

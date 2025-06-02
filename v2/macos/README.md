@@ -47,7 +47,7 @@ Welcome to the macOS distribution of **Polaris Node Manager v2**! This package p
 #### Option A: Download and Install
 ```bash
 # Download DMG file
-curl -L "https://github.com/BANADDA/polaris_distributions/raw/main/v2/macos/PolarisNodeManager-2.0.0.dmg" -o "PolarisNodeManager-2.0.0.dmg"
+curl -L "https://github.com/bigideaafrica/polaris_distributions/raw/main/v2/macos/PolarisNodeManager-2.0.0.dmg" -o "PolarisNodeManager-2.0.0.dmg"
 
 # Open DMG (will mount automatically)
 open PolarisNodeManager-2.0.0.dmg
@@ -73,7 +73,7 @@ hdiutil detach "/Volumes/Polaris Node Manager"
 #### Extract and Run
 ```bash
 # Download portable ZIP
-curl -L "https://github.com/BANADDA/polaris_distributions/raw/main/v2/macos/PolarisNodeManager-Portable.zip" -o "PolarisNodeManager-Portable.zip"
+curl -L "https://github.com/bigideaafrica/polaris_distributions/raw/main/v2/macos/PolarisNodeManager-Portable.zip" -o "PolarisNodeManager-Portable.zip"
 
 # Extract to current directory
 unzip PolarisNodeManager-Portable.zip
@@ -421,7 +421,7 @@ security delete-generic-password -s "Polaris Node Manager" -a "user"
 - 📧 **Email**: support@polarisnode.com
 - 💬 **Discord**: [Join our community](https://discord.gg/polaris)
 - 📖 **Documentation**: [Full docs](https://docs.polarisnode.com)
-- 🐛 **Issues**: [GitHub Issues](https://github.com/BANADDA/polaris_distributions/issues)
+- 🐛 **Issues**: [GitHub Issues](https://github.com/bigideaafrica/polaris_distributions/issues)
 - 🍎 **Apple Support**: [Apple Support](https://support.apple.com) for macOS-specific issues
 
 ## 📋 Command Line Usage

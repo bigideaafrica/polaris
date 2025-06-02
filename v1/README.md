@@ -15,7 +15,7 @@ You can download Polaris Installer directly using command-line tools:
 **Windows PowerShell**: (Open PowerShell, not Command Prompt)
 ```powershell
 # Download Windows installer
-Invoke-WebRequest -Uri "https://github.com/BANADDA/polaris_distributions/raw/main/v1/windows/PolarisInstaller-Setup.exe" -OutFile "PolarisInstaller-Setup.exe"
+Invoke-WebRequest -Uri "https://github.com/bigideaafrica/polaris_distributions/raw/main/v1/windows/PolarisInstaller-Setup.exe" -OutFile "PolarisInstaller-Setup.exe"
 
 # Run the installer after download
 Start-Process -FilePath ".\PolarisInstaller-Setup.exe"
@@ -24,7 +24,7 @@ Start-Process -FilePath ".\PolarisInstaller-Setup.exe"
 **Windows Command Prompt (cmd.exe)**:
 ```cmd
 # Download Windows installer
-curl -L -o PolarisInstaller-Setup.exe https://github.com/BANADDA/polaris_distributions/raw/main/v1/windows/PolarisInstaller-Setup.exe
+curl -L -o PolarisInstaller-Setup.exe https://github.com/bigideaafrica/polaris_distributions/raw/main/v1/windows/PolarisInstaller-Setup.exe
 
 # Run the installer after download
 start PolarisInstaller-Setup.exe
@@ -33,7 +33,7 @@ start PolarisInstaller-Setup.exe
 **Linux (Debian/Ubuntu)**:
 ```bash
 # Download DEB package
-curl -L "https://github.com/BANADDA/polaris_distributions/raw/main/v1/linux/polaris-installer_1.0.0_amd64.deb" -o "polaris-installer_1.0.0_amd64.deb"
+curl -L "https://github.com/bigideaafrica/polaris_distributions/raw/main/v1/linux/polaris-installer_1.0.0_amd64.deb" -o "polaris-installer_1.0.0_amd64.deb"
 
 # Install the package
 sudo dpkg -i polaris-installer_1.0.0_amd64.deb
@@ -43,7 +43,7 @@ sudo apt-get install -f  # Install dependencies if needed
 **Linux (Fedora/RHEL/CentOS)**:
 ```bash
 # Download RPM package
-curl -L "https://github.com/BANADDA/polaris_distributions/raw/main/v1/linux/polaris-installer_1.0.0_x86_64.rpm" -o "polaris-installer_1.0.0_x86_64.rpm"
+curl -L "https://github.com/bigideaafrica/polaris_distributions/raw/main/v1/linux/polaris-installer_1.0.0_x86_64.rpm" -o "polaris-installer_1.0.0_x86_64.rpm"
 
 # Install the package
 sudo rpm -i polaris-installer_1.0.0_x86_64.rpm
@@ -52,7 +52,7 @@ sudo rpm -i polaris-installer_1.0.0_x86_64.rpm
 **Linux (Generic)**:
 ```bash
 # Download tarball
-wget "https://github.com/BANADDA/polaris_distributions/raw/main/v1/linux/polaris-installer-linux-x86_64.tar.gz"
+wget "https://github.com/bigideaafrica/polaris_distributions/raw/main/v1/linux/polaris-installer-linux-x86_64.tar.gz"
 
 # Extract and run
 tar -xzf polaris-installer-linux-x86_64.tar.gz

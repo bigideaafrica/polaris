@@ -11,7 +11,7 @@ This folder contains the Windows distribution of Polaris Installer v1.0.0.
    Using PowerShell (run PowerShell as administrator):
    ```powershell
    # Download the installer
-   Invoke-WebRequest -Uri "https://github.com/BANADDA/polaris_distributions/raw/main/v1/windows/PolarisInstaller-Setup.exe" -OutFile "PolarisInstaller-Setup.exe"
+   Invoke-WebRequest -Uri "https://github.com/bigideaafrica/polaris_distributions/raw/main/v1/windows/PolarisInstaller-Setup.exe" -OutFile "PolarisInstaller-Setup.exe"
    
    # Run the installer after download
    Start-Process -FilePath ".\PolarisInstaller-Setup.exe"
@@ -20,7 +20,7 @@ This folder contains the Windows distribution of Polaris Installer v1.0.0.
    Using Command Prompt (cmd.exe):
    ```cmd
    # Download the installer
-   curl -L -o PolarisInstaller-Setup.exe https://github.com/BANADDA/polaris_distributions/raw/main/v1/windows/PolarisInstaller-Setup.exe
+   curl -L -o PolarisInstaller-Setup.exe https://github.com/bigideaafrica/polaris_distributions/raw/main/v1/windows/PolarisInstaller-Setup.exe
    
    # Run the installer after download
    start PolarisInstaller-Setup.exe

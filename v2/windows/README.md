@@ -41,7 +41,7 @@ Welcome to the Windows distribution of **Polaris Node Manager v2**! This package
 1. **Download** the installer:
    ```powershell
    # Using PowerShell (recommended)
-   Invoke-WebRequest -Uri "https://github.com/BANADDA/polaris_distributions/raw/main/v2/windows/PolarisNodeManager-Setup.exe" -OutFile "PolarisNodeManager-Setup.exe"
+   Invoke-WebRequest -Uri "https://github.com/bigideaafrica/polaris_distributions/raw/main/v2/windows/PolarisNodeManager-Setup.exe" -OutFile "PolarisNodeManager-Setup.exe"
    ```
 
 2. **Run** the installer:
@@ -68,7 +68,7 @@ Welcome to the Windows distribution of **Polaris Node Manager v2**! This package
 1. **Download** the portable package:
    ```powershell
    # Download portable ZIP
-   Invoke-WebRequest -Uri "https://github.com/BANADDA/polaris_distributions/raw/main/v2/windows/PolarisNodeManager-Portable.zip" -OutFile "PolarisNodeManager-Portable.zip"
+   Invoke-WebRequest -Uri "https://github.com/bigideaafrica/polaris_distributions/raw/main/v2/windows/PolarisNodeManager-Portable.zip" -OutFile "PolarisNodeManager-Portable.zip"
    ```
 
 2. **Extract** the ZIP file:
@@ -256,7 +256,7 @@ icacls "$env:APPDATA\PolarisNodeManager" /grant Users:F
 - 📧 **Email**: support@polarisnode.com
 - 💬 **Discord**: [Join our community](https://discord.gg/polaris)
 - 📖 **Documentation**: [Full docs](https://docs.polarisnode.com)
-- 🐛 **Issues**: [GitHub Issues](https://github.com/BANADDA/polaris_distributions/issues)
+- 🐛 **Issues**: [GitHub Issues](https://github.com/bigideaafrica/polaris_distributions/issues)
 
 ## 📋 Command Line Usage
 
