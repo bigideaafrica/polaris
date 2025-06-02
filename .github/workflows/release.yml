@@ -27,31 +27,54 @@ jobs:
         id: create_release
         uses: softprops/action-gh-release@v1
         with:
-          name: Polaris Installer ${{ env.TAG }}
+          name: Polaris Node Manager ${{ env.TAG }}
           draft: false
           prerelease: false
           generate_release_notes: true
           files: |
             v${{ env.VERSION }}/**/*.exe
             v${{ env.VERSION }}/**/*.zip
-            v${{ env.VERSION }}/**/*.deb
-            v${{ env.VERSION }}/**/*.rpm
-            v${{ env.VERSION }}/**/*.pkg
-            v${{ env.VERSION }}/**/*.tar.gz
+            v${{ env.VERSION }}/**/*.AppImage
+            v${{ env.VERSION }}/**/*.dmg
           body: |
-            # Polaris Installer ${{ env.TAG }}
+            # Polaris Node Manager ${{ env.TAG }}
             
-            This release contains distribution packages for Polaris Installer ${{ env.TAG }}.
+            This release contains distribution packages for Polaris Node Manager ${{ env.TAG }} with enhanced multi-machine management capabilities.
             
-            ## Installation
+            ## 🚀 Quick Installation
             
-            ### Windows
-            - **Windows Installer**: Download and run the PolarisInstaller-Setup.exe file.
-            - **Portable**: Download the portable.zip file and extract it to any location.
+            ### Windows (~174 MB)
+            - **ZIP Build (Recommended)**: Download `polaris-node-manager-windows.zip`, extract and run
+            - **Traditional Installer**: Download and run `Polaris Node Manager Setup *.exe`
             
-            ### Linux
-            - **Debian/Ubuntu**: Download the .deb package and run `sudo dpkg -i polaris-installer_*.deb`
-            - **Fedora/RHEL/CentOS**: Download the .rpm package and run `sudo rpm -i polaris-installer_*.rpm`
-            - **Other Distributions**: Download the .tar.gz file, extract it, and run the installer
+            ### Linux (~402 MB)
+            - **ZIP Build (Recommended)**: Download `polaris-node-manager-linux.zip`, extract and run the AppImage inside
+            - **Direct AppImage**: Download `Polaris Node Manager-*.AppImage`, make executable with `chmod +x`, then run
             
-            Please refer to the [documentation](./v${{ env.VERSION }}/README.md) for detailed instructions. 
+            ### macOS (~891 MB)
+            - **ZIP Build (Recommended)**: Download `polaris-node-manager-macos.zip`, extract and run the app
+            - **DMG Installer**: Download `Polaris Node Manager-*.dmg`, mount and drag to Applications
+            
+            ## ✨ What's New in v2
+            
+            - **Multi-Machine Management**: Manage multiple mining rigs under a single UID
+            - **Advanced Validation System**: Automated server authentication and performance benchmarking
+            - **Real-Time Monitoring**: Live status tracking and comprehensive activity logging
+            - **Built-in Contact Support**: Machine-specific support system with screenshot attachments
+            - **Modern React Interface**: Clean, responsive UI with Material-UI Joy
+            - **Bittensor Integration**: Seamless subnet 49 integration with wallet management
+            
+            ## 📋 System Requirements
+            
+            - **RAM**: 4GB minimum (8GB recommended for multi-machine management)
+            - **Storage**: 1-2GB free disk space for extraction
+            - **Network**: Stable internet connection
+            - **OS**: Windows 10+, Modern Linux with desktop, macOS 10.15+
+            
+            ## 📖 Documentation
+            
+            For detailed installation instructions and feature documentation, please refer to:
+            - [Main Documentation](./v${{ env.VERSION }}/README.md)
+            - [Windows Installation Guide](./v${{ env.VERSION }}/windows/README.md)
+            - [Linux Installation Guide](./v${{ env.VERSION }}/linux/README.md)
+            - [macOS Installation Guide](./v${{ env.VERSION }}/macos/README.md) 
