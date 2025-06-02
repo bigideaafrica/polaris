@@ -144,4 +144,6 @@ All releases are built using PyInstaller and include necessary dependencies. The
 
 ## License
 
-Polaris Installer is distributed under the [MIT License](https://opensource.org/licenses/MIT). 
+Polaris Installer is distributed under the [MIT License](https://opensource.org/licenses/MIT).
+
+- 🐛 Issues: [GitHub Issues](https://github.com/bigideaafrica/polaris_distributions/issues) 

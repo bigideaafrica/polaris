@@ -4,17 +4,18 @@ Welcome to the Windows distribution of **Polaris Node Manager v2**! This package
 
 ## 📦 Available Downloads
 
-### Installer Version (Recommended)
-- **PolarisNodeManager-Setup.exe** - Full Windows installer with shortcuts and auto-updates
-- **File Size**: ~150MB
+### Windows Build (Recommended)
+- **polaris-node-manager-windows.zip** - Universal Windows application bundle
+- **File Size**: ~174 MB (174,000 KB)
+- **Installation**: Extract ZIP and run
+- **Updates**: Manual download required
+- **Compatibility**: Works on all Windows 10+ systems
+
+### Windows Installer (Alternative)
+- **Polaris Node Manager Setup 0.17.1.exe** - Traditional Windows installer with shortcuts and auto-updates
+- **File Size**: ~73MB (72,776 KB)
 - **Installation**: Automatic with Windows integration
 - **Updates**: Built-in update system
-
-### Portable Version
-- **PolarisNodeManager-Portable.zip** - No installation required
-- **File Size**: ~120MB compressed
-- **Installation**: Extract and run
-- **Updates**: Manual download required
 
 ## 🔧 System Requirements
 
@@ -35,79 +36,63 @@ Welcome to the Windows distribution of **Polaris Node Manager v2**! This package
 
 ## 🚀 Installation Instructions
 
-### Method 1: Using the Installer (Recommended)
+### Method 1: ZIP Build (Recommended)
 
-#### Option A: Download and Install
-1. **Download** the installer:
-   ```powershell
-   # Using PowerShell (recommended)
-   Invoke-WebRequest -Uri "https://github.com/bigideaafrica/polaris_distributions/raw/main/v2/windows/PolarisNodeManager-Setup.exe" -OutFile "PolarisNodeManager-Setup.exe"
-   ```
+#### Download and Extract
+```powershell
+# Download Windows build
+Invoke-WebRequest -Uri "https://github.com/bigideaafrica/polaris_distributions/raw/main/v2/windows/polaris-node-manager-windows.zip" -OutFile "polaris-node-manager-windows.zip"
 
-2. **Run** the installer:
-   ```powershell
-   # Run with administrator privileges
-   Start-Process -FilePath ".\PolarisNodeManager-Setup.exe" -Verb RunAs
-   ```
+# Extract the ZIP file
+Expand-Archive -Path "polaris-node-manager-windows.zip" -DestinationPath ".\polaris-node-manager"
 
-3. **Follow** the installation wizard:
-   - Accept the license agreement
-   - Choose installation directory (default: `C:\Program Files\PolarisNodeManager`)
-   - Select additional components (desktop shortcut, start menu entry)
-   - Complete the installation
+# Navigate to extracted folder
+cd polaris-node-manager
 
-#### Option B: Direct Installation
-1. **Right-click** on `PolarisNodeManager-Setup.exe`
-2. **Select** "Run as administrator"
-3. **Follow** the installation prompts
-4. **Launch** from Start Menu or Desktop shortcut
+# Run the application
+.\polaris-node-manager.exe
+```
 
-### Method 2: Portable Version
+#### Alternative Extraction Method
+1. **Download** `polaris-node-manager-windows.zip` from the repository
+2. **Right-click** the ZIP file and select "Extract All..."
+3. **Choose** extraction location
+4. **Navigate** to the extracted folder
+5. **Double-click** `polaris-node-manager.exe` to run
 
-#### Extract and Run
-1. **Download** the portable package:
-   ```powershell
-   # Download portable ZIP
-   Invoke-WebRequest -Uri "https://github.com/bigideaafrica/polaris_distributions/raw/main/v2/windows/PolarisNodeManager-Portable.zip" -OutFile "PolarisNodeManager-Portable.zip"
-   ```
+### Method 2: Traditional Installer
 
-2. **Extract** the ZIP file:
-   ```powershell
-   # Extract to current directory
-   Expand-Archive -Path "PolarisNodeManager-Portable.zip" -DestinationPath ".\PolarisNodeManager"
-   ```
+#### Download and Install
+```powershell
+# Download installer
+Invoke-WebRequest -Uri "https://github.com/bigideaafrica/polaris_distributions/raw/main/v2/windows/Polaris%20Node%20Manager%20Setup%200.17.1.exe" -OutFile "Polaris Node Manager Setup 0.17.1.exe"
 
-3. **Navigate** to the extracted folder:
-   ```cmd
-   cd PolarisNodeManager
-   ```
-
-4. **Run** the application:
-   ```cmd
-   # Double-click or run from command line
-   PolarisNodeManager.exe
-   ```
+# Run with administrator privileges
+Start-Process -FilePath ".\Polaris Node Manager Setup 0.17.1.exe" -Verb RunAs
+```
 
 ## 📂 File Structure
 
-### Installed Version
+### ZIP Build Structure
 ```
-C:\Program Files\PolarisNodeManager\
-├── PolarisNodeManager.exe          # Main application
-├── resources\                       # Application resources
-├── locales\                        # Language files
-├── uninstall.exe                   # Uninstaller
-└── README.txt                     # Quick reference
+polaris-node-manager/
+├── polaris-node-manager.exe           # Main application
+├── resources/                          # Application resources
+├── locales/                           # Language files
+├── lib/                               # Required libraries
+├── data/                              # User data and configurations
+├── logs/                              # Application logs
+└── README.txt                         # Quick reference
 ```
 
-### Portable Version
+### Installed Version Structure
 ```
-PolarisNodeManager\
-├── PolarisNodeManager.exe          # Main application
-├── resources\                       # Application resources
-├── data\                          # User data and configurations
-├── logs\                          # Application logs
-└── README.txt                     # Quick reference
+C:\Program Files\PolarisNodeManager\
+├── PolarisNodeManager.exe              # Main application
+├── resources\                           # Application resources
+├── locales\                            # Language files
+├── uninstall.exe                       # Uninstaller
+└── README.txt                         # Quick reference
 ```
 
 ## 🏃‍♂️ Running the Application
@@ -274,6 +259,25 @@ PolarisNodeManager.exe --log-level=verbose
 # Display help
 PolarisNodeManager.exe --help
 ```
+
+### 🛠️ Advanced Support Features
+
+#### Built-in Contact Support System
+Polaris Node Manager v2 includes a comprehensive support system:
+
+1. **Access Support**: Click the "Contact Support" button in the main interface
+2. **Select Machine**: Choose specific machines from the dropdown list (shows machine ID, username, and status)
+3. **Describe Issues**: Use the detailed text area to describe problems with each machine
+4. **Multiple Queries**: Add multiple support queries for different machines in one request
+5. **Attach Screenshots**: Upload screenshots and images to help illustrate issues
+6. **Alternative Channels**: Access direct links to Twitter and Discord for additional support
+
+#### Support Request Features
+- **Machine-Specific Support**: Target support requests to specific mining machines
+- **Comprehensive Details**: Each machine shows GPU info, IP address, and current status
+- **Multi-Machine Support**: Handle multiple machine issues in a single support ticket
+- **Visual Evidence**: Attach screenshots and images to support requests
+- **Real-time Submission**: Send support requests directly from the application
 
 ---
 

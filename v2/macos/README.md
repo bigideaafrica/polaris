@@ -4,18 +4,18 @@ Welcome to the macOS distribution of **Polaris Node Manager v2**! This package p
 
 ## 📦 Available Downloads
 
-### DMG Installer (Recommended)
-- **PolarisNodeManager-2.0.0.dmg** - Standard macOS installer with drag-and-drop installation
-- **File Size**: ~130MB
-- **Installation**: Drag to Applications folder
-- **Updates**: Built-in update system
+### macOS Build (Recommended)
+- **polaris-node-manager-macos.zip** - Universal macOS application bundle
+- **File Size**: ~891 MB
+- **Installation**: Extract ZIP and run
+- **Updates**: Manual download required
 - **Compatibility**: Universal binary (Apple Silicon + Intel)
 
-### Portable App
-- **PolarisNodeManager-Portable.zip** - Standalone application bundle
-- **File Size**: ~110MB compressed
-- **Installation**: Extract and run from any location
-- **Updates**: Manual download required
+### DMG Installer (Alternative)
+- **Polaris Node Manager-0.17.1.dmg** - Traditional macOS installer with drag-and-drop installation
+- **File Size**: ~94MB
+- **Installation**: Drag to Applications folder
+- **Updates**: Built-in update system
 - **Compatibility**: Universal binary (Apple Silicon + Intel)
 
 ## 🔧 System Requirements
@@ -36,63 +36,53 @@ Welcome to the macOS distribution of **Polaris Node Manager v2**! This package p
 - **Display**: Retina display for optimal experience
 
 ### Apple Silicon vs Intel
-- **Apple Silicon (M1/M2)**: Native ARM64 binary for optimal performance
+- **Apple Silicon (M1/M2)**: Native ARM64 binary for optimal performance and energy efficiency
 - **Intel**: Native x64 binary with full feature compatibility
-- **Rosetta 2**: Not required - native binaries for both architectures
+- **Architecture Detection**: Application automatically detects and optimizes for your Mac's architecture
+- **Performance**: Apple Silicon versions typically show 30-50% better performance and battery life
 
 ## 🚀 Installation Instructions
 
-### Method 1: DMG Installer (Recommended)
+### Method 1: ZIP Build (Recommended)
 
-#### Option A: Download and Install
+#### Download and Extract
 ```bash
-# Download DMG file
-curl -L "https://github.com/bigideaafrica/polaris_distributions/raw/main/v2/macos/PolarisNodeManager-2.0.0.dmg" -o "PolarisNodeManager-2.0.0.dmg"
+# Download macOS build
+curl -L "https://github.com/bigideaafrica/polaris_distributions/raw/main/v2/macos/polaris-node-manager-macos.zip" -o "polaris-node-manager-macos.zip"
 
-# Open DMG (will mount automatically)
-open PolarisNodeManager-2.0.0.dmg
+# Extract the file
+unzip polaris-node-manager-macos.zip
+
+# Open extracted folder and double-click the app
+open .
 ```
 
-#### Option B: Manual Installation
-1. **Download** `PolarisNodeManager-2.0.0.dmg` from the repository
+#### Alternative Manual Extraction
+1. **Download** `polaris-node-manager-macos.zip` from the repository
+2. **Double-click** the ZIP file to extract it (macOS will extract automatically)
+3. **Navigate** to the extracted folder
+4. **Double-click** "Polaris Node Manager.app" to launch
+5. **Accept** any macOS security prompts (see Security section below)
+
+### Method 2: DMG Installer
+
+#### Download and Install
+```bash
+# Download DMG file
+curl -L "https://github.com/bigideaafrica/polaris_distributions/raw/main/v2/macos/Polaris%20Node%20Manager-0.17.1.dmg" -o "Polaris Node Manager-0.17.1.dmg"
+
+# Open DMG (will mount automatically)
+open "Polaris Node Manager-0.17.1.dmg"
+
+# Drag app to Applications folder when DMG opens
+```
+
+#### Manual DMG Installation
+1. **Download** `Polaris Node Manager-0.17.1.dmg` from the repository
 2. **Double-click** the DMG file to mount it
 3. **Drag** "Polaris Node Manager" to the "Applications" folder
 4. **Eject** the DMG file from Finder
 5. **Launch** from Applications folder or Launchpad
-
-#### Option C: Command Line Installation
-```bash
-# Mount DMG and copy to Applications
-hdiutil attach PolarisNodeManager-2.0.0.dmg
-cp -R "/Volumes/Polaris Node Manager/Polaris Node Manager.app" /Applications/
-hdiutil detach "/Volumes/Polaris Node Manager"
-```
-
-### Method 2: Portable App
-
-#### Extract and Run
-```bash
-# Download portable ZIP
-curl -L "https://github.com/bigideaafrica/polaris_distributions/raw/main/v2/macos/PolarisNodeManager-Portable.zip" -o "PolarisNodeManager-Portable.zip"
-
-# Extract to current directory
-unzip PolarisNodeManager-Portable.zip
-
-# Run the application
-open "Polaris Node Manager.app"
-```
-
-#### Alternative Extraction Locations
-```bash
-# Extract to Documents folder
-unzip PolarisNodeManager-Portable.zip -d ~/Documents/
-
-# Extract to Desktop
-unzip PolarisNodeManager-Portable.zip -d ~/Desktop/
-
-# Extract to custom location
-unzip PolarisNodeManager-Portable.zip -d /path/to/custom/location/
-```
 
 ## 🍎 macOS-Specific Setup
 
@@ -123,7 +113,23 @@ The application may request keychain access for secure credential storage:
 
 ## 📂 File Structure
 
-### Installed Application
+### ZIP Build Structure
+```
+polaris-node-manager-macos/
+├── Polaris Node Manager.app/           # Main application bundle
+│   ├── Contents/
+│   │   ├── MacOS/
+│   │   │   └── Polaris Node Manager   # Main executable
+│   │   ├── Resources/                 # Application resources
+│   │   ├── Info.plist                # Application metadata
+│   │   └── PkgInfo                   # Package information
+├── resources/                         # Additional resources
+├── data/                             # User data and configurations
+├── logs/                             # Application logs
+└── README.txt                        # Quick reference
+```
+
+### DMG Installer Structure
 ```
 /Applications/Polaris Node Manager.app/
 ├── Contents/
@@ -132,15 +138,6 @@ The application may request keychain access for secure credential storage:
 │   ├── Resources/                       # Application resources
 │   ├── Info.plist                       # Application metadata
 │   └── PkgInfo                         # Package information
-```
-
-### User Data Locations
-```
-~/Library/Application Support/PolarisNodeManager/
-├── config.json                         # User configuration
-├── logs/                               # Application logs
-├── cache/                              # Cached data
-└── wallet/                             # Wallet data (encrypted)
 ```
 
 ## 🏃‍♂️ Running the Application
@@ -454,6 +451,32 @@ Create an Automator workflow for custom shortcuts:
    open "/Applications/Polaris Node Manager.app"
    ```
 5. **Save** as custom app
+
+### 🛠️ Advanced Support Features
+
+#### Built-in Contact Support System
+Polaris Node Manager v2 includes a comprehensive support system optimized for macOS:
+
+1. **Access Support**: Click the "Contact Support" button in the main interface
+2. **Select Machine**: Choose specific machines from the dropdown list (shows machine ID, username, and status)
+3. **Describe Issues**: Use the detailed text area to describe problems with each machine
+4. **Multiple Queries**: Add multiple support queries for different machines in one request
+5. **Attach Screenshots**: Upload screenshots and images to help illustrate issues (integrates with macOS screenshot tools)
+6. **Alternative Channels**: Access direct links to Twitter and Discord for additional support
+
+#### Support Request Features
+- **Machine-Specific Support**: Target support requests to specific mining machines
+- **Comprehensive Details**: Each machine shows GPU info, IP address, and current status
+- **Multi-Machine Support**: Handle multiple machine issues in a single support ticket
+- **Visual Evidence**: Attach screenshots and images to support requests
+- **macOS Integration**: Seamless integration with macOS notification system and Keychain
+- **Real-time Submission**: Send support requests directly from the application
+
+#### macOS-Specific Support Features
+- **Keychain Integration**: Securely store and retrieve support credentials
+- **Notification Center**: Receive support status updates through macOS notifications
+- **Spotlight Search**: Support tickets and machine info searchable through Spotlight
+- **Share Extension**: Use macOS Share menu to attach files and screenshots to support requests
 
 ---
 

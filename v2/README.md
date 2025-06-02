@@ -50,7 +50,13 @@ Polaris Node Manager v2 represents a complete evolution from v1, introducing mul
 - **Session Indicators**: User welcome messages and session expiration timers
 
 ### 🛠️ Support & Maintenance
-- **Contact Support**: Built-in support contact system for technical assistance
+- **Contact Support System**: Advanced built-in support contact system for technical assistance
+  - **Machine-Specific Support**: Select specific machines from dropdown and describe issues
+  - **Multi-Query Support**: Add multiple support queries for different machines in one request
+  - **Issue Descriptions**: Detailed text areas for describing problems with each machine
+  - **Screenshot Attachments**: Upload screenshots and images to support requests
+  - **Alternative Channels**: Direct links to Twitter and Discord for additional support
+  - **Real-time Submission**: Send support requests directly from the application interface
 - **Activity Logs**: Exportable logs for troubleshooting and analysis
 - **Clear Logs**: Easy log management and cleanup functionality
 - **User Management**: User session tracking and logout capabilities
@@ -65,17 +71,16 @@ Polaris Node Manager v2 represents a complete evolution from v1, introducing mul
 Choose the appropriate installer for your operating system:
 
 ### Windows
-- [**Installer (Recommended)**](./windows/PolarisNodeManager-Setup.exe) - Full installation with shortcuts and auto-updates
-- [Portable Version](./windows/PolarisNodeManager-Portable.zip) - No installation required
+- [**Windows Build**](./windows/polaris-node-manager-windows.zip) - Universal Windows application (~174MB)
+- [Windows Installer](./windows/Polaris%20Node%20Manager%20Setup%200.17.1.exe) - Traditional installer with shortcuts (~73MB)
 
 ### Linux
-- [**DEB Package**](./linux/polaris-node-manager_2.0.0_amd64.deb) - For Ubuntu/Debian
-- [**RPM Package**](./linux/polaris-node-manager_2.0.0_x86_64.rpm) - For Fedora/RHEL/CentOS
-- [Portable Tarball](./linux/polaris-node-manager-linux-x86_64.tar.gz) - Universal Linux
+- [**Linux Build**](./linux/polaris-node-manager-linux.zip) - Universal Linux application (~402MB)
+- [AppImage (x64)](./linux/Polaris%20Node%20Manager-0.17.1.AppImage) - Alternative AppImage format (~99MB)
 
 ### MacOS
-- [**DMG Installer**](./macos/PolarisNodeManager-2.0.0.dmg) - For macOS 10.15+
-- [Portable App](./macos/PolarisNodeManager-Portable.zip) - Drag and drop installation
+- [**macOS Build**](./macos/polaris-node-manager-macos.zip) - Universal macOS application (~891MB)
+- [DMG Installer](./macos/Polaris%20Node%20Manager-0.17.1.dmg) - Traditional DMG installer (~94MB)
 
 ## 🚀 Quick Start
 
@@ -83,31 +88,40 @@ Choose the appropriate installer for your operating system:
 
 #### Windows
 ```powershell
-# Download and run installer
-Invoke-WebRequest -Uri "https://github.com/bigideaafrica/polaris_distributions/raw/main/v2/windows/PolarisNodeManager-Setup.exe" -OutFile "PolarisNodeManager-Setup.exe"
-Start-Process -FilePath ".\PolarisNodeManager-Setup.exe"
+# Download Windows build
+Invoke-WebRequest -Uri "https://github.com/bigideaafrica/polaris_distributions/raw/main/v2/windows/polaris-node-manager-windows.zip" -OutFile "polaris-node-manager-windows.zip"
+
+# Extract the ZIP file
+Expand-Archive -Path "polaris-node-manager-windows.zip" -DestinationPath ".\polaris-node-manager"
+
+# Run the application
+cd polaris-node-manager
+.\polaris-node-manager.exe
 ```
 
-#### Linux (Ubuntu/Debian)
+#### Linux
 ```bash
-# Download and install DEB package
-wget "https://github.com/bigideaafrica/polaris_distributions/raw/main/v2/linux/polaris-node-manager_2.0.0_amd64.deb"
-sudo dpkg -i polaris-node-manager_2.0.0_amd64.deb
-sudo apt-get install -f  # Install dependencies
-```
+# Download Linux build
+wget "https://github.com/bigideaafrica/polaris_distributions/raw/main/v2/linux/polaris-node-manager-linux.zip"
 
-#### Linux (Fedora/RHEL/CentOS)
-```bash
-# Download and install RPM package
-wget "https://github.com/bigideaafrica/polaris_distributions/raw/main/v2/linux/polaris-node-manager_2.0.0_x86_64.rpm"
-sudo rpm -i polaris-node-manager_2.0.0_x86_64.rpm
+# Extract the file
+unzip polaris-node-manager-linux.zip
+
+# Make executable and run
+chmod +x ./polaris-node-manager.AppImage
+./polaris-node-manager.AppImage
 ```
 
 #### MacOS
 ```bash
-# Download DMG file
-curl -L "https://github.com/bigideaafrica/polaris_distributions/raw/main/v2/macos/PolarisNodeManager-2.0.0.dmg" -o "PolarisNodeManager-2.0.0.dmg"
-# Open DMG and drag to Applications folder
+# Download macOS build
+curl -L "https://github.com/bigideaafrica/polaris_distributions/raw/main/v2/macos/polaris-node-manager-macos.zip" -o "polaris-node-manager-macos.zip"
+
+# Extract the file
+unzip polaris-node-manager-macos.zip
+
+# Open extracted folder and double-click the app
+open .
 ```
 
 ### 2. Adding Your First Mining Machine
@@ -136,6 +150,15 @@ The new validation system includes:
   - Total system performance rating
   - Hardware specification detection
 
+## ⚠️ Important Notes
+
+Before installing Polaris Node Manager v2, please ensure:
+
+- **System Requirements**: Ensure your system meets minimum requirements for optimal performance
+- **Stable Internet Connection**: A reliable internet connection is needed for mining operations and real-time monitoring
+- **Admin Privileges**: Administrator privileges may be required during initial setup and configuration
+- **Keep App Updated**: Regularly check for updates to maintain compatibility with the network and ensure optimal performance
+
 ## 📋 System Requirements
 
 ### Minimum Requirements
@@ -153,21 +176,22 @@ The new validation system includes:
 ### Platform-Specific Requirements
 
 #### Windows
-- Windows 10 build 1903+ or Windows 11
-- .NET 6.0 Runtime (included in installer)
-- Windows PowerShell 5.1 or PowerShell 7+
-- Windows Defender exclusion recommended
+- Windows 10 or later (64-bit)
+- 4GB RAM minimum (8GB recommended for multi-machine management)
+- 1GB free disk space (for ZIP build extraction)
+- .NET Framework (included in builds)
 
 #### Linux
-- Modern Linux distribution (kernel 4.18+)
-- systemd support
-- GTK3+ libraries
-- OpenSSL 1.1.1 or newer
+- Modern Linux distribution with desktop environment
+- 4GB RAM minimum (8GB recommended for multi-machine management)
+- 1GB free disk space (for ZIP build extraction)
+- Stable internet connection
 
 #### MacOS
 - macOS 10.15 (Catalina) or later
-- Apple Silicon (M1/M2) and Intel processors supported
-- Xcode command line tools (for some features)
+- 4GB RAM minimum (8GB recommended for multi-machine management)
+- 2GB free disk space (for ZIP build extraction)
+- Universal binary supports both Apple Silicon and Intel Macs
 
 ## 🔧 Features Deep Dive
 

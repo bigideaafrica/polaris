@@ -4,19 +4,19 @@ Welcome to the Linux distribution of **Polaris Node Manager v2**! This package p
 
 ## 📦 Available Downloads
 
-### Package Installers
-- **polaris-node-manager_2.0.0_amd64.deb** - For Debian/Ubuntu systems
-- **polaris-node-manager_2.0.0_x86_64.rpm** - For RHEL/Fedora/CentOS systems
-- **File Size**: ~120MB each
-- **Installation**: System package managers
-- **Updates**: Through system updates
-
-### Portable Options
-- **PolarisNodeManager-2.0.0.AppImage** - Universal Linux application
-- **polaris-node-manager-linux-x86_64.tar.gz** - Portable tarball
-- **File Size**: ~100MB compressed
-- **Installation**: Extract and run
+### Linux Build (Recommended)
+- **polaris-node-manager-linux.zip** - Universal Linux application bundle
+- **File Size**: ~402 MB
+- **Installation**: Extract ZIP and run
 - **Updates**: Manual download required
+- **Compatibility**: Works on most modern Linux distributions
+
+### AppImage Alternative
+- **Polaris Node Manager-0.17.1.AppImage** - Traditional AppImage format
+- **File Size**: ~99MB
+- **Installation**: Download and run - no system installation required
+- **Updates**: Manual download required
+- **Compatibility**: Universal Linux format
 
 ## 🔧 System Requirements
 
@@ -51,113 +51,58 @@ sudo pacman -S gtk3 libnotify nss libxss libxtst xdg-utils
 
 ## 🚀 Installation Instructions
 
-### Method 1: DEB Package (Ubuntu/Debian)
+### Method 1: ZIP Build (Recommended)
 
-#### Option A: Download and Install
+#### Download and Extract
 ```bash
-# Download DEB package
-wget "https://github.com/bigideaafrica/polaris_distributions/raw/main/v2/linux/polaris-node-manager_2.0.0_amd64.deb"
+# Download Linux build
+wget "https://github.com/bigideaafrica/polaris_distributions/raw/main/v2/linux/polaris-node-manager-linux.zip"
 
-# Install with dpkg
-sudo dpkg -i polaris-node-manager_2.0.0_amd64.deb
+# Extract the file
+unzip polaris-node-manager-linux.zip
 
-# Install dependencies if needed
-sudo apt-get install -f
+# Make executable and run
+chmod +x ./polaris-node-manager.AppImage
+./polaris-node-manager.AppImage
 ```
 
-#### Option B: One-Line Installation
-```bash
-# Download and install in one command
-curl -L "https://github.com/bigideaafrica/polaris_distributions/raw/main/v2/linux/polaris-node-manager_2.0.0_amd64.deb" -o /tmp/polaris.deb && sudo dpkg -i /tmp/polaris.deb && sudo apt-get install -f
-```
+#### Alternative Manual Extraction
+1. **Download** `polaris-node-manager-linux.zip` from the repository
+2. **Extract** using your file manager or command line
+3. **Navigate** to the extracted folder
+4. **Make executable**: `chmod +x polaris-node-manager.AppImage`
+5. **Run** the application: `./polaris-node-manager.AppImage`
 
-### Method 2: RPM Package (Fedora/RHEL/CentOS)
-
-#### Fedora
-```bash
-# Download RPM package
-wget "https://github.com/bigideaafrica/polaris_distributions/raw/main/v2/linux/polaris-node-manager_2.0.0_x86_64.rpm"
-
-# Install with dnf
-sudo dnf install ./polaris-node-manager_2.0.0_x86_64.rpm
-```
-
-#### RHEL/CentOS
-```bash
-# Download RPM package
-curl -L "https://github.com/bigideaafrica/polaris_distributions/raw/main/v2/linux/polaris-node-manager_2.0.0_x86_64.rpm" -o polaris-node-manager.rpm
-
-# Install with yum/dnf
-sudo yum install ./polaris-node-manager.rpm
-# OR for newer versions
-sudo dnf install ./polaris-node-manager.rpm
-```
-
-### Method 3: AppImage (Universal)
+### Method 2: Direct AppImage
 
 #### Download and Run
 ```bash
-# Download AppImage
-wget "https://github.com/bigideaafrica/polaris_distributions/raw/main/v2/linux/PolarisNodeManager-2.0.0.AppImage"
+# Download AppImage directly
+wget "https://github.com/bigideaafrica/polaris_distributions/raw/main/v2/linux/Polaris%20Node%20Manager-0.17.1.AppImage"
 
 # Make executable
-chmod +x PolarisNodeManager-2.0.0.AppImage
+chmod +x "Polaris Node Manager-0.17.1.AppImage"
 
 # Run the application
-./PolarisNodeManager-2.0.0.AppImage
-```
-
-#### Desktop Integration (Optional)
-```bash
-# Create desktop entry
-cat > ~/.local/share/applications/polaris-node-manager.desktop << EOF
-[Desktop Entry]
-Type=Application
-Name=Polaris Node Manager
-Comment=Mining Machine Management
-Exec=$PWD/PolarisNodeManager-2.0.0.AppImage
-Icon=polaris-node-manager
-Categories=Network;System;
-EOF
-
-# Update desktop database
-update-desktop-database ~/.local/share/applications/
-```
-
-### Method 4: Portable Tarball
-
-#### Extract and Run
-```bash
-# Download tarball
-wget "https://github.com/bigideaafrica/polaris_distributions/raw/main/v2/linux/polaris-node-manager-linux-x86_64.tar.gz"
-
-# Extract
-tar -xzf polaris-node-manager-linux-x86_64.tar.gz
-
-# Navigate to directory
-cd polaris-node-manager
-
-# Make executable
-chmod +x polaris-node-manager
-
-# Run application
-./polaris-node-manager
+./"Polaris Node Manager-0.17.1.AppImage"
 ```
 
 ## 📂 File Structure
 
-### Package Installation
+### ZIP Build Structure
 ```
-/usr/bin/polaris-node-manager              # Main executable
-/usr/share/polaris-node-manager/           # Application resources
-/usr/share/applications/                   # Desktop entry
-/usr/share/icons/hicolor/                  # Application icons
-/usr/share/doc/polaris-node-manager/       # Documentation
+polaris-node-manager-linux/
+├── polaris-node-manager.AppImage       # Main application (AppImage format)
+├── resources/                          # Application resources
+├── lib/                               # Required libraries
+├── data/                              # User data and configurations
+├── logs/                              # Application logs
+└── README.txt                         # Quick reference
 ```
 
-### AppImage Structure
+### Direct AppImage Structure
 ```
-PolarisNodeManager-2.0.0.AppImage          # Self-contained application
+Polaris Node Manager-0.17.1.AppImage    # Self-contained application
 ```
 
 ### Portable Structure
@@ -184,18 +129,25 @@ polaris-node-manager
 
 ### From AppImage
 ```bash
-# Direct execution
-./PolarisNodeManager-2.0.0.AppImage
+# Direct execution (x64)
+./"Polaris Node Manager-0.17.1.AppImage"
+
+# Direct execution (ARM64)
+./"Polaris Node Manager-0.17.1-arm64.AppImage"
 
 # Background execution
-nohup ./PolarisNodeManager-2.0.0.AppImage &
+nohup ./"Polaris Node Manager-0.17.1.AppImage" &
 ```
 
-### From Portable
+### From Unpacked
 ```bash
-# Navigate to directory and run
-cd polaris-node-manager
-./polaris-node-manager
+# Navigate to unpacked directory and run (x64)
+cd linux-unpacked
+./"Polaris Node Manager"
+
+# Navigate to unpacked directory and run (ARM64)
+cd linux-arm64-unpacked
+./"Polaris Node Manager"
 ```
 
 ### First Launch Setup
@@ -496,6 +448,25 @@ export POLARIS_DEBUG=false
 # Start application
 exec /usr/bin/polaris-node-manager "$@"
 ```
+
+### 🛠️ Advanced Support Features
+
+#### Built-in Contact Support System
+Polaris Node Manager v2 includes a comprehensive support system:
+
+1. **Access Support**: Click the "Contact Support" button in the main interface
+2. **Select Machine**: Choose specific machines from the dropdown list (shows machine ID, username, and status)
+3. **Describe Issues**: Use the detailed text area to describe problems with each machine
+4. **Multiple Queries**: Add multiple support queries for different machines in one request
+5. **Attach Screenshots**: Upload screenshots and images to help illustrate issues
+6. **Alternative Channels**: Access direct links to Twitter and Discord for additional support
+
+#### Support Request Features
+- **Machine-Specific Support**: Target support requests to specific mining machines
+- **Comprehensive Details**: Each machine shows GPU info, IP address, and current status
+- **Multi-Machine Support**: Handle multiple machine issues in a single support ticket
+- **Visual Evidence**: Attach screenshots and images to support requests
+- **Real-time Submission**: Send support requests directly from the application
 
 ---
 
