@@ -2,26 +2,38 @@
 
 This repository contains distribution packages for the Polaris Node Manager application, organized by version.
 
-## 🚀 Latest Version: v2.0.0
+## 🚀 Latest Version: v2.0.1
 
-**Polaris Node Manager v2** brings powerful multi-machine management capabilities with advanced validation and monitoring features.
+**Polaris Node Manager v2.0.1** brings significant under-the-hood improvements, focusing on SSH reliability, automated hardware detection, and resource management alignment.
 
-### 🆕 What's New in v2.0.0
+### 🆕 What's New in v2.0.1
+- **SSH Overhaul**: Replaced `electron-ssh2` with direct OpenSSH calls for improved stability and security.
+- **Automated Hardware Detection**: Integrated `detect_compute_specs.py` for automatic remote hardware detection (CPU, GPU, RAM, Storage), replacing previous manual methods.
+- **Enhanced Connection Flow**: Updated SSH connection process to utilize the new Python-based hardware detection.
+- **Resource Deletion Verified**: Confirmed compute resource deletion functionality aligns with Firebase API.
+
+### Key Features from v2.0.0 (Still Included)
 - **Multi-Machine Management**: Register and manage multiple mining rigs under a single UID
 - **Self-Validation System**: Automated server authentication and performance benchmarking
 - **Real-time Monitoring**: Live status tracking for all connected mining machines
 - **Activity Logging**: Comprehensive logging of mining operations and system events
+- **Modern React UI**: Clean, responsive interface built with React and Material-UI Joy
 - **Enhanced Cross-platform Support**: Optimized for Windows, macOS, and Linux
 
 ## Available Platforms
 
-- **Windows**: Installer executable (.exe) and portable version
-- **Linux**: DEB packages (Ubuntu/Debian), RPM packages (Fedora/RHEL/CentOS), and portable tarballs
-- **MacOS**: DMG installer and portable version
+- **Windows**: Universal ZIP build and traditional installer
+- **Linux**: Universal ZIP build (containing AppImage) and direct AppImage
+- **MacOS**: Universal ZIP build and traditional DMG installer
 
 ## Available Versions
 
-- **[v2.0.0](./v2/) - Latest Release** ⭐
+- **[v2.0.1](./v2.0.1/) - Latest Release** ⭐
+  - SSH client overhaul for enhanced stability
+  - Python-based automatic remote hardware detection
+  - Verified compute resource deletion with Firebase API
+
+- **[v2.0.0](./v2/) - Previous Stable Release**
   - Multi-machine management with unified UID support
   - Advanced validation and benchmarking system
   - Modern React-based interface
@@ -35,16 +47,17 @@ This repository contains distribution packages for the Polaris Node Manager appl
 
 ### Quick Download (Recommended)
 
-**Latest v2.0.0**: Visit the [Releases](https://github.com/bigideaafrica/polaris_distributions/releases) page and download the latest version for your platform.
+**Latest v2.0.1**: Visit the [Releases](https://github.com/bigideaafrica/polaris_distributions/releases) page and download the latest version for your platform.
 
 ### Version-Specific Download
 
 Navigate to the specific version folder:
-- **v2.0.0** (Latest): [v2/](./v2/)
-  - Windows: [v2/windows](./v2/windows/)
-  - Linux: [v2/linux](./v2/linux/)
-  - MacOS: [v2/macos](./v2/macos/)
+- **v2.0.1** (Latest): [v2.0.1/](./v2.0.1/)
+  - Windows: [v2.0.1/windows](./v2.0.1/windows/)
+  - Linux: [v2.0.1/linux](./v2.0.1/linux/)
+  - MacOS: [v2.0.1/macos](./v2.0.1/macos/)
 
+- **v2.0.0**: [v2/](./v2/)
 - **v1.0.0** (Legacy): [v1/](./v1/)
 
 ### Clone Repository
@@ -133,10 +146,11 @@ Each version folder contains:
 
 ## Roadmap
 
+- **v2.0.1** ✅ - SSH overhaul, Python-based hardware detection, resource deletion verified
 - **v2.0.0** ✅ - Multi-node management with self-validation
-- **v2.1.0** 🔄 - Advanced analytics and reporting dashboard
-- **v2.2.0** 📋 - API integration and remote management
-- **v3.0.0** 🚀 - Cloud-based management and mobile app
+- **v2.1.0** 🔄 - Advanced analytics and reporting dashboard (Planned)
+- **v2.2.0** 📋 - API integration and remote management (Planned)
+- **v3.0.0** 🚀 - Cloud-based management and mobile app (Planned)
 
 ## Build Information
 
