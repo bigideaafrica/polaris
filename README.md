@@ -2,15 +2,15 @@
 
 This repository contains distribution packages for the Polaris Node Manager application, organized by version.
 
-## 🚀 Latest Version: v2.0.1
+## 🚀 Latest Version: v2.0.2
 
-**Polaris Node Manager v2.0.1** brings significant under-the-hood improvements, focusing on SSH reliability, automated hardware detection, and resource management alignment.
+**Polaris Node Manager v2.0.2** introduces a completely redesigned connection system with enhanced security, streamlined SSH key management, and improved user experience.
 
-### 🆕 What's New in v2.0.1
-- **SSH Overhaul**: Replaced `electron-ssh2` with direct OpenSSH calls for improved stability and security.
-- **Automated Hardware Detection**: Integrated `detect_compute_specs.py` for automatic remote hardware detection (CPU, GPU, RAM, Storage), replacing previous manual methods.
-- **Enhanced Connection Flow**: Updated SSH connection process to utilize the new Python-based hardware detection.
-- **Resource Deletion Verified**: Confirmed compute resource deletion functionality aligns with Firebase API.
+### 🆕 What's New in v2.0.2
+- **API-Based Connection System**: Replaced traditional SSH connections with a more robust API-based approach for better reliability and security.
+- **Simplified SSH Key Management**: Direct key input via text area, eliminating the need to specify file paths while maintaining "Load from File" option.
+- **Enhanced Security**: More secure private key handling with improved authentication flow.
+- **Streamlined UI**: Simplified workflow for adding and connecting to remote machines with better error messages and connection feedback.
 
 ### Key Features from v2.0.0 (Still Included)
 - **Multi-Machine Management**: Register and manage multiple mining rigs under a single UID
@@ -28,12 +28,17 @@ This repository contains distribution packages for the Polaris Node Manager appl
 
 ## Available Versions
 
-- **[v2.0.1](./v2.0.1/) - Latest Release** ⭐
+- **[v2.0.2](./v2.0.2/) - Latest Release** ⭐
+  - API-based connection system for improved reliability
+  - Simplified SSH key management with direct key input
+  - Enhanced security and streamlined user interface
+
+- **[v2.0.1](./v2.0.1/) - Previous Release**
   - SSH client overhaul for enhanced stability
   - Python-based automatic remote hardware detection
   - Verified compute resource deletion with Firebase API
 
-- **[v2.0.0](./v2/) - Previous Stable Release**
+- **[v2.0.0](./v2/) - Stable Release**
   - Multi-machine management with unified UID support
   - Advanced validation and benchmarking system
   - Modern React-based interface
@@ -47,12 +52,17 @@ This repository contains distribution packages for the Polaris Node Manager appl
 
 ### Quick Download (Recommended)
 
-**Latest v2.0.1**: Visit the [Releases](https://github.com/bigideaafrica/polaris_distributions/releases) page and download the latest version for your platform.
+**Latest v2.0.2**: Visit the [Releases](https://github.com/bigideaafrica/polaris_distributions/releases) page and download the latest version for your platform.
 
 ### Version-Specific Download
 
 Navigate to the specific version folder:
-- **v2.0.1** (Latest): [v2.0.1/](./v2.0.1/)
+- **v2.0.2** (Latest): [v2.0.2/](./v2.0.2/)
+  - Windows: [v2.0.2/windows](./v2.0.2/windows/)
+  - Linux: [v2.0.2/linux](./v2.0.2/linux/)
+  - MacOS: [v2.0.2/macos](./v2.0.2/macos/)
+
+- **v2.0.1**: [v2.0.1/](./v2.0.1/)
   - Windows: [v2.0.1/windows](./v2.0.1/windows/)
   - Linux: [v2.0.1/linux](./v2.0.1/linux/)
   - MacOS: [v2.0.1/macos](./v2.0.1/macos/)
@@ -146,10 +156,11 @@ Each version folder contains:
 
 ## Roadmap
 
+- **v2.0.2** ✅ - API-based connection system, enhanced SSH key management, streamlined UI
 - **v2.0.1** ✅ - SSH overhaul, Python-based hardware detection, resource deletion verified
 - **v2.0.0** ✅ - Multi-node management with self-validation
 - **v2.1.0** 🔄 - Advanced analytics and reporting dashboard (Planned)
-- **v2.2.0** 📋 - API integration and remote management (Planned)
+- **v2.2.0** 📋 - Enhanced API integration and remote management (Planned)
 - **v3.0.0** 🚀 - Cloud-based management and mobile app (Planned)
 
 ## Build Information
