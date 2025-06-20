@@ -2,15 +2,19 @@
 
 This repository contains distribution packages for the Polaris Node Manager application, organized by version.
 
-## 🚀 Latest Version: v2.0.2
+## 🚀 Latest Version: v2.0.3
 
-**Polaris Node Manager v2.0.2** introduces a completely redesigned connection system with enhanced security, streamlined SSH key management, and improved user experience.
+**Polaris Node Manager v2.0.3** introduces an advanced real-time monitoring system alongside the existing robust connection infrastructure, providing comprehensive health checks and visual status indicators for all your mining machines.
 
-### 🆕 What's New in v2.0.2
-- **API-Based Connection System**: Replaced traditional SSH connections with a more robust API-based approach for better reliability and security.
-- **Simplified SSH Key Management**: Direct key input via text area, eliminating the need to specify file paths while maintaining "Load from File" option.
-- **Enhanced Security**: More secure private key handling with improved authentication flow.
-- **Streamlined UI**: Simplified workflow for adding and connecting to remote machines with better error messages and connection feedback.
+### 🆕 What's New in v2.0.3
+- **Advanced Real-Time Monitoring System**: Complete overhaul of machine monitoring with four key components:
+  - **Connection Monitoring**: Real-time TCP connectivity testing with RTT measurements
+  - **Authentication Monitoring**: Continuous credential verification with response times  
+  - **Proof of Work Results**: Live performance scoring for CPU/GPU with tier qualification
+  - **Docker Environment Monitoring**: Container environment health checking
+- **Visual Status Dashboard**: Color-coded indicators with detailed diagnostic tooltips
+- **Automatic Health Checks**: Continuous monitoring without user intervention
+- **Performance Tracking**: Real-time performance scores and tier qualification status
 
 ### Key Features from v2.0.0 (Still Included)
 - **Multi-Machine Management**: Register and manage multiple mining rigs under a single UID
@@ -28,7 +32,13 @@ This repository contains distribution packages for the Polaris Node Manager appl
 
 ## Available Versions
 
-- **[v2.0.2](./v2.0.2/) - Latest Release** ⭐
+- **[v2.0.3](./v2.0.3/) - Latest Release** ⭐
+  - Advanced real-time monitoring system with four key monitoring components
+  - Visual status dashboard with color-coded indicators and diagnostic tooltips
+  - Automatic health checks and continuous monitoring
+  - Performance tracking with tier qualification status
+
+- **[v2.0.2](./v2.0.2/) - Previous Release**
   - API-based connection system for improved reliability
   - Simplified SSH key management with direct key input
   - Enhanced security and streamlined user interface
@@ -52,12 +62,17 @@ This repository contains distribution packages for the Polaris Node Manager appl
 
 ### Quick Download (Recommended)
 
-**Latest v2.0.2**: Visit the [Releases](https://github.com/bigideaafrica/polaris_distributions/releases) page and download the latest version for your platform.
+**Latest v2.0.3**: Visit the [Releases](https://github.com/bigideaafrica/polaris_distributions/releases) page and download the latest version for your platform.
 
 ### Version-Specific Download
 
 Navigate to the specific version folder:
-- **v2.0.2** (Latest): [v2.0.2/](./v2.0.2/)
+- **v2.0.3** (Latest): [v2.0.3/](./v2.0.3/)
+  - Windows: [v2.0.3/windows](./v2.0.3/windows/)
+  - Linux: [v2.0.3/linux](./v2.0.3/linux/)
+  - MacOS: [v2.0.3/macos](./v2.0.3/macos/)
+
+- **v2.0.2**: [v2.0.2/](./v2.0.2/)
   - Windows: [v2.0.2/windows](./v2.0.2/windows/)
   - Linux: [v2.0.2/linux](./v2.0.2/linux/)
   - MacOS: [v2.0.2/macos](./v2.0.2/macos/)
@@ -156,6 +171,7 @@ Each version folder contains:
 
 ## Roadmap
 
+- **v2.0.3** ✅ - Advanced real-time monitoring system, visual status dashboard, automatic health checks
 - **v2.0.2** ✅ - API-based connection system, enhanced SSH key management, streamlined UI
 - **v2.0.1** ✅ - SSH overhaul, Python-based hardware detection, resource deletion verified
 - **v2.0.0** ✅ - Multi-node management with self-validation
@@ -172,3 +188,12 @@ All releases are built using PyInstaller and include necessary dependencies. The
 Polaris Installer is distributed under the [MIT License](https://opensource.org/licenses/MIT).
 
 - 🐛 Issues: [GitHub Issues](https://github.com/bigideaafrica/polaris_distributions/issues) 
+
+## 📋 Version History
+
+| Version | Release Date | Key Features |
+|---------|-------------|--------------|
+| **v2.0.3** | Latest | Advanced real-time monitoring system, comprehensive health checks, visual status dashboard |
+| v2.0.2 | Previous | API-based connection system, enhanced SSH key management, streamlined UI |
+| v2.0.1 | Archive | SSH overhaul, automated hardware detection, enhanced connection flow |
+| v2.0.0 | Archive | Multi-machine management, Bittensor integration, modern UI |
