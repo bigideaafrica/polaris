@@ -2,21 +2,23 @@
 
 This repository contains distribution packages for the Polaris Node Manager application, organized by version.
 
-## 🚀 Latest Version: v2.0.4
+## 🚀 Latest Version: v2.0.5
 
-**Polaris Node Manager v2.0.4** introduces critical security enhancements with updated server public keys and comprehensive endpoint security improvements, ensuring maximum protection for all mining operations and data communications.
+**Polaris Node Manager v2.0.5** delivers critical infrastructure updates with enhanced server key management and refined endpoint configurations, ensuring optimal connectivity and improved mining performance across all operations.
 
-### 🔒 What's New in v2.0.4
-- **Updated Server Public Keys**: New cryptographic keys with enhanced RSA-4096 encryption
-- **Endpoint Security Hardening**: Comprehensive security improvements for all API endpoints
-- **Enhanced SSL/TLS Configuration**: Upgraded to TLS 1.3 with perfect forward secrecy
-- **Certificate Pinning**: Added certificate pinning for all secure connections
-- **API Authentication Strengthening**: Improved token validation and refresh mechanisms
-- **Security Audit Compliance**: Implemented security measures based on professional audit
-- **Encrypted Data Transmission**: All data now encrypted with AES-256-GCM
-- **Rate Limiting**: Advanced rate limiting to prevent abuse and DDoS attacks
+### 🔧 What's New in v2.0.5
+- **Updated Server Keys**: Enhanced server key infrastructure with improved authentication protocols
+- **Endpoint Optimization**: Refined endpoint configurations for better connectivity and reduced latency
+- **Infrastructure Hardening**: Server-side improvements for enhanced stability and performance
+- **Connection Reliability**: Improved connection management with better failover mechanisms
+- **Performance Optimizations**: Backend optimizations for faster response times and reduced overhead
+- **Compatibility Updates**: Enhanced compatibility with latest network infrastructure
+- **Error Handling**: Improved error handling and diagnostic capabilities for connection issues
+- **Logging Enhancements**: Enhanced logging for better troubleshooting and monitoring
 
-### Key Features from v2.0.0 (Still Included)
+### Key Features from v2.0.4 (Still Included)
+- **Updated Server Public Keys**: Enhanced RSA-4096 encryption and comprehensive endpoint security
+- **TLS 1.3 Implementation**: Perfect forward secrecy and certificate pinning
 - **Multi-Machine Management**: Register and manage multiple mining rigs under a single UID
 - **Self-Validation System**: Automated server authentication and performance benchmarking
 - **Real-time Monitoring**: Live status tracking for all connected mining machines
@@ -32,7 +34,12 @@ This repository contains distribution packages for the Polaris Node Manager appl
 
 ## Available Versions
 
-- **[v2.0.4](./v2.0.4/) - Latest Release** ⭐
+- **[v2.0.5](./v2.0.5/) - Latest Release** ⭐
+  - Updated server keys with enhanced authentication protocols
+  - Optimized endpoint configurations for improved connectivity and performance
+  - Infrastructure hardening and connection reliability improvements
+
+- **[v2.0.4](./v2.0.4/) - Previous Release**
   - Updated server public keys with RSA-4096 encryption
   - Comprehensive endpoint security hardening and TLS 1.3 upgrade
   - Certificate pinning and enhanced API authentication
@@ -68,12 +75,17 @@ This repository contains distribution packages for the Polaris Node Manager appl
 
 ### Quick Download (Recommended)
 
-**Latest v2.0.4**: Visit the [Releases](https://github.com/bigideaafrica/polaris_distributions/releases) page and download the latest version for your platform.
+**Latest v2.0.5**: Visit the [Releases](https://github.com/bigideaafrica/polaris_distributions/releases) page and download the latest version for your platform.
 
 ### Version-Specific Download
 
 Navigate to the specific version folder:
-- **v2.0.4** (Latest): [v2.0.4/](./v2.0.4/)
+- **v2.0.5** (Latest): [v2.0.5/](./v2.0.5/)
+  - Windows: [v2.0.5/windows](./v2.0.5/windows/)
+  - Linux: [v2.0.5/linux](./v2.0.5/linux/)
+  - MacOS: [v2.0.5/macos](./v2.0.5/macos/)
+
+- **v2.0.4**: [v2.0.4/](./v2.0.4/)
   - Windows: [v2.0.4/windows](./v2.0.4/windows/)
   - Linux: [v2.0.4/linux](./v2.0.4/linux/)
   - MacOS: [v2.0.4/macos](./v2.0.4/macos/)
@@ -182,6 +194,7 @@ Each version folder contains:
 
 ## Roadmap
 
+- **v2.0.5** ✅ - Updated server keys, optimized endpoint configurations, infrastructure hardening
 - **v2.0.4** ✅ - Updated server public keys, comprehensive endpoint security hardening, TLS 1.3 upgrade
 - **v2.0.3** ✅ - Advanced real-time monitoring system, visual status dashboard, automatic health checks
 - **v2.0.2** ✅ - API-based connection system, enhanced SSH key management, streamlined UI
@@ -205,7 +218,8 @@ Polaris Installer is distributed under the [MIT License](https://opensource.org/
 
 | Version | Release Date | Key Features |
 |---------|-------------|--------------|
-| **v2.0.4** | Latest | Updated server public keys, endpoint security hardening, TLS 1.3 upgrade, certificate pinning |
+| **v2.0.5** | Latest | Updated server keys, optimized endpoint configurations, infrastructure hardening |
+| v2.0.4 | Previous | Updated server public keys, endpoint security hardening, TLS 1.3 upgrade, certificate pinning |
 | v2.0.3 | Previous | Advanced real-time monitoring system, comprehensive health checks, visual status dashboard |
 | v2.0.2 | Previous | API-based connection system, enhanced SSH key management, streamlined UI |
 | v2.0.1 | Archive | SSH overhaul, automated hardware detection, enhanced connection flow |
