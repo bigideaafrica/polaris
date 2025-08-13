@@ -2,11 +2,21 @@
 
 This repository contains distribution packages for the Polaris Node Manager application, organized by version.
 
-## 🚀 Latest Version: v2.0.5
+## 🚀 Latest Version: v2.0.6
 
-**Polaris Node Manager v2.0.5** delivers critical infrastructure updates with enhanced server key management and refined endpoint configurations, ensuring optimal connectivity and improved mining performance across all operations.
+**Polaris Node Manager v2.0.6** introduces major desktop application enhancements with comprehensive compute resource management, API services integration, and a powerful template system for one-click deployments across multiple platforms.
 
-### 🔧 What's New in v2.0.5
+### 🔧 What's New in v2.0.6
+- **Compute Resources Screen**: New dedicated interface for managing compute resources and API services
+- **API Services Integration**: Enhanced API services management with key handling (marked "Coming Soon")
+- **Template System**: Pre-configured deployment templates for PolarisLLM, CUDA, PyTorch, TensorFlow, and Ubuntu VMs
+- **Database Integration**: 8+ curated container images from Docker Hub with custom template creation
+- **One-click Deployment**: Streamlined deployment workflow with real-time status tracking and progress notifications
+- **Enhanced UI**: Improved resource browsing with real-time filtering and green highlighting for owned resources
+- **Access Methods**: Comprehensive modal interface for SSH credentials, connection details, and rental duration
+- **Public Repository Support**: Templates can be pulled from public repositories for remote machine deployment
+
+### Key Features from v2.0.5 (Still Included)
 - **Updated Server Keys**: Enhanced server key infrastructure with improved authentication protocols
 - **Endpoint Optimization**: Refined endpoint configurations for better connectivity and reduced latency
 - **Infrastructure Hardening**: Server-side improvements for enhanced stability and performance
@@ -34,7 +44,13 @@ This repository contains distribution packages for the Polaris Node Manager appl
 
 ## Available Versions
 
-- **[v2.0.5](./v2.0.5/) - Latest Release** ⭐
+- **[v2.0.6](./v2.0.6/) - Latest Release** ⭐
+  - Major desktop application enhancements with compute resource management
+  - API services integration and template system for one-click deployments
+  - Enhanced UI with real-time filtering and comprehensive access methods
+  - Database integration with 8+ curated container images
+
+- **[v2.0.5](./v2.0.5/) - Previous Release**
   - Updated server keys with enhanced authentication protocols
   - Optimized endpoint configurations for improved connectivity and performance
   - Infrastructure hardening and connection reliability improvements
@@ -75,12 +91,17 @@ This repository contains distribution packages for the Polaris Node Manager appl
 
 ### Quick Download (Recommended)
 
-**Latest v2.0.5**: Visit the [Releases](https://github.com/bigideaafrica/polaris_distributions/releases) page and download the latest version for your platform.
+**Latest v2.0.6**: Visit the [Releases](https://github.com/bigideaafrica/polaris_distributions/releases) page and download the latest version for your platform.
 
 ### Version-Specific Download
 
 Navigate to the specific version folder:
-- **v2.0.5** (Latest): [v2.0.5/](./v2.0.5/)
+- **v2.0.6** (Latest): [v2.0.6/](./v2.0.6/)
+  - Windows: [v2.0.6/windows](./v2.0.6/windows/)
+  - Linux: [v2.0.6/linux](./v2.0.6/linux/)
+  - MacOS: [v2.0.6/macos](./v2.0.6/macos/)
+
+- **v2.0.5**: [v2.0.5/](./v2.0.5/)
   - Windows: [v2.0.5/windows](./v2.0.5/windows/)
   - Linux: [v2.0.5/linux](./v2.0.5/linux/)
   - MacOS: [v2.0.5/macos](./v2.0.5/macos/)
@@ -194,6 +215,7 @@ Each version folder contains:
 
 ## Roadmap
 
+- **v2.0.6** ✅ - Desktop app enhancements, compute resource management, template system, one-click deployment
 - **v2.0.5** ✅ - Updated server keys, optimized endpoint configurations, infrastructure hardening
 - **v2.0.4** ✅ - Updated server public keys, comprehensive endpoint security hardening, TLS 1.3 upgrade
 - **v2.0.3** ✅ - Advanced real-time monitoring system, visual status dashboard, automatic health checks
@@ -218,7 +240,8 @@ Polaris Installer is distributed under the [MIT License](https://opensource.org/
 
 | Version | Release Date | Key Features |
 |---------|-------------|--------------|
-| **v2.0.5** | Latest | Updated server keys, optimized endpoint configurations, infrastructure hardening |
+| **v2.0.6** | Latest | Desktop app enhancements, compute resource management, template system, one-click deployment |
+| v2.0.5 | Previous | Updated server keys, optimized endpoint configurations, infrastructure hardening |
 | v2.0.4 | Previous | Updated server public keys, endpoint security hardening, TLS 1.3 upgrade, certificate pinning |
 | v2.0.3 | Previous | Advanced real-time monitoring system, comprehensive health checks, visual status dashboard |
 | v2.0.2 | Previous | API-based connection system, enhanced SSH key management, streamlined UI |
