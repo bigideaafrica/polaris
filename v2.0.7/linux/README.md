@@ -1,4 +1,4 @@
-# Polaris Node Manager v2.0.6 - Linux
+# Polaris Node Manager v2.0.7 - Linux
 
 ## Installation
 
@@ -18,7 +18,7 @@
    ```
 3. Navigate to the extracted directory:
    ```bash
-   cd polaris-node-manager-linux-v2.0.6
+   cd polaris-node-manager-linux-v2.0.7
    ```
 4. Make the executable file runnable:
    ```bash
@@ -29,7 +29,15 @@
    ./polaris-node-manager
    ```
 
-### What's New in v2.0.6
+### What's New in v2.0.7
+
+#### Security Updates
+- **Critical Security Patches**: Enhanced security measures to protect user data and system integrity
+- **Authentication Improvements**: Strengthened authentication mechanisms and session management
+- **Vulnerability Fixes**: Addressed potential security vulnerabilities identified in previous versions
+- **Enhanced Encryption**: Improved data encryption for secure communications
+
+#### Previous Features (v2.0.6)
 
 #### Desktop App Enhancements
 - **Compute Resources Screen**: New dedicated interface for managing compute resources
@@ -58,4 +66,4 @@ The application integrates seamlessly with Linux desktop environments and suppor
 For technical support and documentation, visit the main project repository.
 
 ---
-**Note**: This version includes significant improvements to the desktop application interface and deployment capabilities.
+**Note**: This version focuses primarily on security enhancements while maintaining all previous desktop application interface and deployment capabilities.
