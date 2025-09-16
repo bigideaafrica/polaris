@@ -1,19 +1,33 @@
-# Handle large binary files with Git LFS
+# Git LFS tracking for large distribution files
+
+# Track all ZIP files in version directories
+v*/*/*.zip filter=lfs diff=lfs merge=lfs -text
+v*/*/*/*.zip filter=lfs diff=lfs merge=lfs -text
+
+# Track common binary distribution formats
+*.tar.gz filter=lfs diff=lfs merge=lfs -text
 *.exe filter=lfs diff=lfs merge=lfs -text
-*.zip filter=lfs diff=lfs merge=lfs -text
+*.msi filter=lfs diff=lfs merge=lfs -text
+*.dmg filter=lfs diff=lfs merge=lfs -text
 *.deb filter=lfs diff=lfs merge=lfs -text
 *.rpm filter=lfs diff=lfs merge=lfs -text
-*.pkg filter=lfs diff=lfs merge=lfs -text
-*.iso filter=lfs diff=lfs merge=lfs -text
-*.dmg filter=lfs diff=lfs merge=lfs -text
-# Text files that should maintain their format
-*.md text
-*.yml text
-*.yaml text
-*.json text
-*.txt text
-# Declare files that will always have CRLF line endings on checkout
-*.bat text eol=crlf
-# Declare files that will always have LF line endings on checkout
-*.sh text eol=lf 
-*.psd filter=lfs diff=lfs merge=lfs -text
+*.appimage filter=lfs diff=lfs merge=lfs -text
+
+# Track large application files
+*.asar filter=lfs diff=lfs merge=lfs -text
+*.dll filter=lfs diff=lfs merge=lfs -text
+*.so filter=lfs diff=lfs merge=lfs -text
+*.dylib filter=lfs diff=lfs merge=lfs -text
+
+# Track binary data files
+*.bin filter=lfs diff=lfs merge=lfs -text
+*.dat filter=lfs diff=lfs merge=lfs -text
+*.pak filter=lfs diff=lfs merge=lfs -text
+
+# Exclude text files from LFS
+*.md -filter
+*.txt -filter
+*.json -filter
+*.yml -filter
+*.yaml -filter
+*.xml -filter
