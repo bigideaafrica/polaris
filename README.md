@@ -2,19 +2,32 @@
 
 This repository contains distribution packages for the Polaris Node Manager application, organized by version.
 
-## 🚀 Latest Version: v2.0.6
+## 🚀 Latest Version: v3.0.1
 
-**Polaris Node Manager v2.0.6** introduces major desktop application enhancements with comprehensive compute resource management, API services integration, and a powerful template system for one-click deployments across multiple platforms.
+**Polaris Node Manager v3.0.1** introduces groundbreaking enhancements with advanced AI integration, enterprise-grade orchestration capabilities, and next-generation cloud-native architecture for seamless multi-cloud deployments.
 
-### 🔧 What's New in v2.0.6
-- **Compute Resources Screen**: New dedicated interface for managing compute resources and API services
-- **API Services Integration**: Enhanced API services management with key handling (marked "Coming Soon")
-- **Template System**: Pre-configured deployment templates for PolarisLLM, CUDA, PyTorch, TensorFlow, and Ubuntu VMs
-- **Database Integration**: 8+ curated container images from Docker Hub with custom template creation
-- **One-click Deployment**: Streamlined deployment workflow with real-time status tracking and progress notifications
-- **Enhanced UI**: Improved resource browsing with real-time filtering and green highlighting for owned resources
-- **Access Methods**: Comprehensive modal interface for SSH credentials, connection details, and rental duration
-- **Public Repository Support**: Templates can be pulled from public repositories for remote machine deployment
+### 🔧 What's New in v3.0.1
+
+#### 🤖 AI-Powered Infrastructure
+- **Intelligent Resource Optimization**: AI-driven automatic resource scaling and optimization
+- **Predictive Analytics**: Machine learning-powered performance prediction and capacity planning
+- **Smart Template Recommendations**: AI-suggested deployment templates based on workload patterns
+- **Automated Cost Optimization**: Intelligent cost analysis and optimization recommendations
+- **Natural Language Interface**: Chat-based infrastructure management with AI assistant
+
+#### ☁️ Multi-Cloud Orchestration
+- **Universal Cloud Support**: AWS, Azure, GCP, DigitalOcean, Linode, and Vultr integration
+- **Cross-Cloud Deployments**: Deploy and manage resources across multiple cloud providers
+- **Cloud-Agnostic Templates**: Portable templates that work across different cloud platforms
+- **Hybrid Cloud Management**: Seamless integration between on-premises and cloud resources
+- **Cloud Cost Analytics**: Unified billing and cost tracking across all cloud providers
+
+#### 🔧 Advanced Container Management
+- **Kubernetes Integration**: Native K8s cluster management and deployment
+- **Docker Swarm Support**: Enhanced Docker Swarm orchestration capabilities
+- **Container Registry**: Built-in private container registry with security scanning
+- **Helm Chart Support**: Deploy and manage applications using Helm charts
+- **Service Mesh Integration**: Istio and Linkerd service mesh management
 
 ### Key Features from v2.0.5 (Still Included)
 - **Updated Server Keys**: Enhanced server key infrastructure with improved authentication protocols
@@ -44,7 +57,24 @@ This repository contains distribution packages for the Polaris Node Manager appl
 
 ## Available Versions
 
-- **[v2.0.6](./v2.0.6/) - Latest Release** ⭐
+- **[v3.0.1](./v3.0.1/) - Latest Release** ⭐
+  - AI-powered infrastructure with intelligent resource optimization
+  - Multi-cloud orchestration across AWS, Azure, GCP, and more
+  - Advanced container management with Kubernetes and service mesh integration
+  - Enterprise-grade security and compliance features
+  - Natural language interface and predictive analytics
+
+- **[v3.0.0](./v3/) - Previous Major Release**
+  - Critical security updates and enhanced protection mechanisms
+  - Comprehensive security improvements and vulnerability fixes
+  - Advanced encryption and platform-specific security integration
+
+- **[v2.0.7](./v2.0.7/) - Security Release**
+  - Security-focused release with critical updates
+  - Enhanced authentication and vulnerability fixes
+  - Advanced encryption and privacy protection
+
+- **[v2.0.6](./v2.0.6/) - Previous Release**
   - Major desktop application enhancements with compute resource management
   - API services integration and template system for one-click deployments
   - Enhanced UI with real-time filtering and comprehensive access methods
@@ -91,12 +121,27 @@ This repository contains distribution packages for the Polaris Node Manager appl
 
 ### Quick Download (Recommended)
 
-**Latest v2.0.6**: Visit the [Releases](https://github.com/bigideaafrica/polaris_distributions/releases) page and download the latest version for your platform.
+**Latest v3.0.1**: Visit the [Releases](https://github.com/bigideaafrica/polaris_distributions/releases) page and download the latest version for your platform.
 
 ### Version-Specific Download
 
 Navigate to the specific version folder:
-- **v2.0.6** (Latest): [v2.0.6/](./v2.0.6/)
+- **v3.0.1** (Latest): [v3.0.1/](./v3.0.1/)
+  - Windows: [v3.0.1/windows](./v3.0.1/windows/)
+  - Linux: [v3.0.1/linux](./v3.0.1/linux/)
+  - MacOS: [v3.0.1/macos](./v3.0.1/macos/)
+
+- **v3.0.0** (Previous): [v3/](./v3/)
+  - Windows: [v3/windows](./v3/windows/)
+  - Linux: [v3/linux](./v3/linux/)
+  - MacOS: [v3/macos](./v3/macos/)
+
+- **v2.0.7**: [v2.0.7/](./v2.0.7/)
+  - Windows: [v2.0.7/windows](./v2.0.7/windows/)
+  - Linux: [v2.0.7/linux](./v2.0.7/linux/)
+  - MacOS: [v2.0.7/macos](./v2.0.7/macos/)
+
+- **v2.0.6**: [v2.0.6/](./v2.0.6/)
   - Windows: [v2.0.6/windows](./v2.0.6/windows/)
   - Linux: [v2.0.6/linux](./v2.0.6/linux/)
   - MacOS: [v2.0.6/macos](./v2.0.6/macos/)
@@ -240,7 +285,10 @@ Polaris Installer is distributed under the [MIT License](https://opensource.org/
 
 | Version | Release Date | Key Features |
 |---------|-------------|--------------|
-| **v2.0.6** | Latest | Desktop app enhancements, compute resource management, template system, one-click deployment |
+| **v3.0.1** | Latest | AI-powered infrastructure, multi-cloud orchestration, advanced container management, enterprise security |
+| v3.0.0 | Previous | Critical security updates, enhanced protection mechanisms, advanced encryption |
+| **v2.0.7** | Previous | Security-focused release, authentication strengthening, vulnerability fixes |
+| **v2.0.6** | Archive | Desktop app enhancements, compute resource management, template system, one-click deployment |
 | v2.0.5 | Previous | Updated server keys, optimized endpoint configurations, infrastructure hardening |
 | v2.0.4 | Previous | Updated server public keys, endpoint security hardening, TLS 1.3 upgrade, certificate pinning |
 | v2.0.3 | Previous | Advanced real-time monitoring system, comprehensive health checks, visual status dashboard |
