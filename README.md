@@ -4,30 +4,30 @@ This repository contains distribution packages for the Polaris Node Manager appl
 
 ## 🚀 Latest Version: v3.0.2
 
-**Polaris Node Manager v3.0.2** delivers revolutionary edge computing capabilities, advanced blockchain integration, and next-generation autonomous infrastructure management with enhanced AI-driven optimization and enterprise-grade deployment automation.
+**Polaris Node Manager v3.0.2** delivers revolutionary compute resource management, advanced distributed computing capabilities, and next-generation autonomous infrastructure management with enhanced AI-driven optimization and enterprise-grade compute rental automation.
 
 ### 🔧 What's New in v3.0.2
 
-#### 🌐 Edge Computing & IoT Integration
-- **Edge Node Management**: Deploy and manage edge computing nodes across global locations
-- **IoT Device Orchestration**: Comprehensive IoT device management and orchestration platform
-- **Edge-to-Cloud Synchronization**: Seamless data synchronization between edge devices and cloud infrastructure
-- **5G Network Integration**: Native support for 5G network slicing and edge computing
-- **Real-time Edge Analytics**: Process and analyze data at the edge with minimal latency
+#### 🖥️ Advanced Compute Resource Management
+- **Distributed Compute Nodes**: Deploy and manage compute resources across global data centers
+- **GPU Compute Orchestration**: Comprehensive GPU resource management and allocation platform
+- **Multi-Cloud Compute Integration**: Seamless integration with AWS, Azure, GCP, and private cloud infrastructure
+- **Edge Computing Support**: Native support for edge computing deployment and management
+- **Real-time Compute Analytics**: Process and analyze compute workloads with minimal latency
 
-#### ⛓️ Advanced Blockchain Integration
-- **Multi-Chain Support**: Native integration with Ethereum, Polygon, Binance Smart Chain, Solana, and Avalanche
-- **DeFi Protocol Integration**: Built-in support for major DeFi protocols and yield farming
-- **NFT Management**: Comprehensive NFT minting, trading, and marketplace integration
-- **Smart Contract Deployment**: Visual smart contract builder and deployment tools
-- **Blockchain Node Management**: Run and manage blockchain nodes across multiple networks
+#### 💰 Compute Rental & Marketplace Integration
+- **Compute Marketplace**: Built-in marketplace for renting and leasing compute resources
+- **Dynamic Pricing**: AI-driven pricing optimization based on demand and resource availability
+- **Resource Allocation**: Intelligent allocation of compute resources across multiple tenants
+- **Usage Tracking**: Comprehensive tracking and billing for compute resource consumption
+- **Compute Pool Management**: Visual compute pool builder and deployment tools
 
 #### 🤖 Autonomous Infrastructure
-- **Self-Healing Systems**: Automatic detection and resolution of infrastructure issues
-- **Predictive Maintenance**: AI-powered predictive maintenance and optimization
-- **Autonomous Scaling**: Intelligent auto-scaling based on workload patterns and predictions
-- **Zero-Touch Operations**: Fully autonomous infrastructure management with minimal human intervention
-- **Chaos Engineering**: Built-in chaos engineering tools for resilience testing
+- **Self-Healing Systems**: Automatic detection and resolution of compute infrastructure issues
+- **Predictive Maintenance**: AI-powered predictive maintenance and compute optimization
+- **Autonomous Scaling**: Intelligent auto-scaling based on compute workload patterns and predictions
+- **Zero-Touch Operations**: Fully autonomous compute infrastructure management with minimal human intervention
+- **Load Balancing**: Built-in load balancing tools for optimal compute resource distribution
 
 #### 🔐 Enhanced Security & Compliance
 - **Zero Trust 2.0**: Advanced zero-trust architecture with behavioral analytics
@@ -65,11 +65,11 @@ This repository contains distribution packages for the Polaris Node Manager appl
 ## Available Versions
 
 - **[v3.0.2](./v3.0.2/) - Latest Release** ⭐
-  - Revolutionary edge computing capabilities with IoT integration
-  - Advanced blockchain integration with multi-chain support and DeFi protocols
+  - Revolutionary compute resource management with distributed computing capabilities
+  - Advanced compute rental marketplace with dynamic pricing and resource allocation
   - Autonomous infrastructure with self-healing systems and predictive maintenance
   - Enhanced security with quantum-safe cryptography and zero trust 2.0
-  - Enterprise-grade deployment automation and compliance features
+  - Enterprise-grade compute deployment automation and compliance features
 
 - **[v3.0.1](./v3.0.1/) - Previous Release**
   - AI-powered infrastructure with intelligent resource optimization
@@ -237,13 +237,13 @@ Each version folder contains:
 
 ## System Requirements
 
-### Minimum Requirements
-- **RAM**: 4GB minimum (8GB recommended for multi-machine management)
-- **Storage**: 500MB disk space (increased for v2 features)
-- **Network**: Stable internet connection
+### 🎯 Minimum Requirements
+- **RAM**: 32GB minimum
+- **Storage**: 300GB minimum (500GB+ recommended)
+- **Network**: Stable internet connection with low latency
 - **Permissions**: Administrator/sudo privileges for installation
 
-### Platform-Specific Requirements
+### 🖥️ Platform-Specific Requirements
 
 #### Windows
 - Windows 10 or later (64-bit)
@@ -259,23 +259,52 @@ Each version folder contains:
 - macOS 10.15 (Catalina) or later
 - Apple Silicon (M1/M2) and Intel processors supported
 
-### Mining Performance Requirements
-- **CPU**: Multi-core processor (4+ cores recommended for v2)
-- **RAM**: 8GB+ for optimal multi-machine management
-- **GPU**: Optional but recommended (NVIDIA/AMD with current drivers)
-- **Network**: Low-latency connection for real-time monitoring
+### 🚀 GPU Requirements (For Rewards & Incentives)
+
+#### NVIDIA GPU (Required for Rewards)
+- **NVIDIA GPU**: Only NVIDIA GPUs are supported for rewards and incentives
+- **VRAM**: 24GB minimum (48GB+ highly recommended)
+- **Drivers**: Latest NVIDIA drivers required
+- **Architecture**: RTX 30/40 series or A100/H100 for optimal performance
+
+#### AMD GPU Support
+- **AMD GPUs**: Currently not supported for rewards
+- **Note**: AMD GPU users will not receive incentives or rewards
+
+### 💻 CPU Support (Testing & Free Tier Only)
+
+#### CPU Processing
+- **CPU Support**: CPUs are accepted for testing purposes only
+- **No Rewards**: CPU processing does not qualify for incentives or rewards
+- **Free Tier**: CPU users are welcome to participate in the free tier
+- **Testing**: Ideal for development, testing, and educational purposes
+
+### 🔧 Hardware Performance Requirements
+
+#### Recommended Setup for Optimal Performance
+- **CPU**: Multi-core processor (12+ cores recommended)
+- **RAM**: 64GB+ for optimal multi-machine management
+- **GPU**: NVIDIA RTX 4090, A100, H100, A6000, or L40 with 48GB+ VRAM
+- **Storage**: 1TB+ NVMe SSD for best performance
+- **Network**: Low-latency fiber connection for real-time operations
+
+#### Mining Performance Requirements
+- **GPU**: NVIDIA RTX 30/40 series or professional cards (A100/H100/A6000/L40)
+- **VRAM**: 24GB minimum but 48GB+ recommended for competitive performance
+- **Cooling**: Proper cooling system for sustained GPU operation
+- **Power**: Adequate PSU to support high-performance GPU operation
 
 ## Key Features Comparison
 
-| Feature | v1.0.0 | v2.0.0 |
-|---------|--------|--------|
-| Machine Management | Single machine | Multiple machines under one UID |
-| User Interface | Basic GUI | Modern React + Material-UI |
-| Validation System | Manual setup | Automated self-validation |
-| Real-time Monitoring | Basic stats | Live status + activity logs |
-| Performance Benchmarking | None | Built-in CPU/GPU scoring |
-| Cross-platform | Windows/Linux | Windows/Linux/MacOS |
-| Network Monitoring | Basic | Advanced with response times |
+| Feature | v1.0.0 | v2.0.0 | v3.0.2 |
+|---------|--------|--------|--------|
+| Machine Management | Single machine | Multiple machines under one UID | Advanced multi-node orchestration |
+| User Interface | Basic GUI | Modern React + Material-UI | Next-gen AI-powered interface |
+| Validation System | Manual setup | Automated self-validation | AI-driven autonomous validation |
+| Real-time Monitoring | Basic stats | Live status + activity logs | Predictive analytics + edge computing |
+| Performance Benchmarking | None | Built-in CPU/GPU scoring | Advanced ML-based optimization |
+| Cross-platform | Windows/Linux | Windows/Linux/MacOS | Universal with cloud integration |
+| Network Monitoring | Basic | Advanced with response times | 5G + edge network optimization |
 
 ## Roadmap
 
@@ -304,7 +333,7 @@ Polaris Installer is distributed under the [MIT License](https://opensource.org/
 
 | Version | Release Date | Key Features |
 |---------|-------------|--------------|
-| **v3.0.2** | Latest | Revolutionary edge computing, advanced blockchain integration, autonomous infrastructure, quantum-safe security |
+| **v3.0.2** | Latest | Revolutionary compute resource management, advanced compute rental marketplace, autonomous infrastructure, quantum-safe security |
 | v3.0.1 | Previous | AI-powered infrastructure, multi-cloud orchestration, advanced container management, enterprise security |
 | v3.0.0 | Previous | Critical security updates, enhanced protection mechanisms, advanced encryption |
 | **v2.0.7** | Previous | Security-focused release, authentication strengthening, vulnerability fixes |
