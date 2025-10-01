@@ -238,8 +238,8 @@ Each version folder contains:
 ## System Requirements
 
 ### 🎯 Minimum Requirements
-- **RAM**: 32GB minimum
-- **Storage**: 300GB minimum (500GB+ recommended)
+- **RAM**: 8GB minimum
+- **Storage**: 5GB minimum (10GB+ recommended)
 - **Network**: Stable internet connection with low latency
 - **Permissions**: Administrator/sudo privileges for installation
 
@@ -264,6 +264,9 @@ Each version folder contains:
 #### NVIDIA GPU (Required for Rewards)
 - **NVIDIA GPU**: Only NVIDIA GPUs are supported for rewards and incentives
 - **VRAM**: 24GB minimum (48GB+ highly recommended)
+- **RAM**: 32GB minimum
+- **Storage**: 300GB minimum (500GB+ recommended)
+- **Network**: Stable internet connection with low latency
 - **Drivers**: Latest NVIDIA drivers required
 - **Architecture**: RTX 30/40 series or A100/H100 for optimal performance
 
